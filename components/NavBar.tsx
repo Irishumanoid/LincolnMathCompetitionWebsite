@@ -6,8 +6,7 @@ import { useMemo, useState } from "react";
 
 const navItems = [
     {name: 'Home', href: '/'},
-    {name: 'About', href: '/about'},
-    {name: 'Contact', href: '/contact'},
+    {name: 'Information', href: '/info'},
 ];
 
 export default function NavBar() {
