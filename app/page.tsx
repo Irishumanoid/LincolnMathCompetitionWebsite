@@ -1,22 +1,16 @@
-"use client";
-
-import { Button, Card, CardActions, CardContent, Divider, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
+import { Button, Card, CardActions, CardContent, Divider, Link, Typography } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
 import HeroImage from '../public/imgs/background.jpg';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
 
-const StyledTable = styled(Table)(({ theme }) => ({
-    backgroundColor: theme.palette.action.hover,
-}));
-
 export default function Home() {
 
     return (
         <div className="flex flex-col">
             <div className="relative w-full shadow-lg">
-                <Image src={HeroImage} alt="Hero" className="w-full min-h-64 object-cover object-center"/>
+                <Image src={HeroImage} alt="Hero" className="w-full min-h-64 max-h-96 object-cover object-center"/>
                 <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-50 text-white items-center justify-center text-center p-4'>
                     <Typography variant="h6">
                         Welcome to the
@@ -26,8 +20,8 @@ export default function Home() {
                     </Typography>
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center p-8 gap-8">
-                <Card variant="elevation" className="max-w-xl">
+            <div className="flex flex-wrap justify-center p-4 sm:p-8 gap-8">
+                <Card id="about" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">
                             About
@@ -42,7 +36,7 @@ export default function Home() {
                     </ CardContent>
                 </Card>
 
-                <Card variant="elevation" className="max-w-xl">
+                <Card id="registration" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">
                             Registration
@@ -61,66 +55,19 @@ export default function Home() {
                     </CardActions>
                 </Card>
 
-                <Card variant="elevation" className="max-w-xl w-full">
+                <Card id="time-and-date" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">
-                            Competition Schedule
+                            Time and Date
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
-                        <Typography>
-                            Date of competition: Saturday, June 8th
-                        </Typography>
-                        <br />
-                        <TableContainer component={Paper}>
-                            <StyledTable sx={{ minWidth: 300 }} aria-label="Schedule Table">
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell>Name</TableCell>
-                                        <TableCell align="right">Time</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    <TableRow>
-                                        <TableCell>Registration</TableCell>
-                                        <TableCell align="right">10:30am - 11am</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Opening Ceremony</TableCell>
-                                        <TableCell align="right">11:00am - 11:30am</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Super Sprint</TableCell>
-                                        <TableCell align="right">11:30am - 12:10pm</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Mental Mania</TableCell>
-                                        <TableCell align="right">12:10pm - 12:20pm</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Lunch</TableCell>
-                                        <TableCell align="right">12:20pm - 1:00pm</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Team Tumble</TableCell>
-                                        <TableCell align="right">1:00pm - 1:30pm</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Lynx Bowl</TableCell>
-                                        <TableCell align="right">1:30pm - 2:30pm</TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>Closing Ceremony</TableCell>
-                                        <TableCell align="right">2:30pm - 3:00pm</TableCell>
-                                    </TableRow>
-                                </TableBody>
-                            </StyledTable>
-                        </TableContainer>
+                        <ul className='list-disc ml-4'>
+                            <li><b>Date:</b> Saturday, June 8th at 10:30am (full schedule <Link href="/info#schedule">here</Link>)</li>
+                            <li><b>Location:</b> Lincoln High School: <Link href="https://maps.app.goo.gl/ViWc33Y4vYL66wCF7" target="_blank">4400 Interlake Ave N, Seattle, WA 98103</Link></li>
+                            <li><b>Directions:</b> Go to Lincoln High School and go through the large historic entrance on the west side (on Interlake Ave). 
+                            Immediately upon entering, go forward until you reach the commons space with a projector and courtyard at the front.</li>
+                        </ul>
                     </ CardContent>
-                    <CardActions>
-                        <Button href="https://forms.office.com/pages/responsepage.aspx?id=WNEx1HRgMkiHg1Hqb23SJ_L1aZAVTPxCi-YvwKCadtVUOVQ3TEdGR0hOWlFKQVhCRjlVWEJOMlkyWC4u" variant="contained">
-                            Register
-                        </Button>
-                    </CardActions>
                 </Card>
             </div>
             <div>

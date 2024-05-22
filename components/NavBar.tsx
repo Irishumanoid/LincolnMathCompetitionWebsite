@@ -2,7 +2,7 @@
 
 import { Menu } from "@mui/icons-material";
 import { Box, Typography, Divider, List, ListItem, ListItemButton, ListItemText, AppBar, Button, Drawer, IconButton, Toolbar } from "@mui/material";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 const navItems = [
     {name: 'Home', href: '/'},
@@ -13,9 +13,9 @@ export default function NavBar() {
 
     const [open, setOpen] = useState(false);
 
-    const handleDrawerToggle = () => {
+    const handleDrawerToggle = useCallback(() => {
         setOpen(state=>!state);
-    }
+    }, [setOpen]);
 
     const drawer = useMemo(() => (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
