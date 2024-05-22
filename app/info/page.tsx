@@ -35,11 +35,12 @@ export default function Info() {
                     <Divider sx={{marginY: "8px"}} />
                     <ul className='list-disc ml-4'>
                         <li>Each round has two sections of competitors: an introductory group, and a competitive group</li>
-                        <li>The competition will consist of three rounds:</li>
+                        <li>The competition will consist of four rounds:</li>
                         <ul className='list-disc ml-8' style={{ listStyleType: "lower-roman" }}>
                             <li><b>Super Sprint:</b> 25 problems of increasing difficulty in 30 minutes, completed individually</li>
                             <li><b>Mental Mania:</b> With no paper and pencil allowed, each question will be read aloud twice by the proctor, and students will then be given 10 more seconds to complete each of the 10 problem.</li>
                             <li><b>Team Tumble:</b> Teams of 3 compete to complete 10 problems of a higher difficulty compared to the individual round in 25 minutes.</li>
+                            <li><b>Lynx Bowl:</b> A team-based college themed game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li>
                         </ul>
                         <li>Lunch will be provided at 12:20pm</li>
                         <li>Grading will happen during/after lunch</li>
