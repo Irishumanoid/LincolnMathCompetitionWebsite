@@ -7,6 +7,7 @@ import { useCallback, useMemo, useState } from "react";
 const navItems = [
     {name: 'Home', href: '/'},
     {name: 'Information', href: '/info'},
+    {name: 'FAQ', href: '/faq'},
 ];
 
 export default function NavBar() {

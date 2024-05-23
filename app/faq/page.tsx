@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Link, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import { Box, Container, Typography, Link, Accordion, AccordionSummary, AccordionDetails, Divider } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
@@ -108,16 +108,19 @@ const faqItems: FAQItem[] = [
 
 export default function Faq() {
     return (
-        <div className="flex flex-col">
-            <Box sx={{ p: 3 }}>
+        <div className="flex flex-col items-center">
+            <div className='p-4 mt-8 max-w-3xl w-full'>
                 <Typography variant="h4" component="h1" gutterBottom>
                     Frequently Asked Questions
                 </Typography>
-                <Typography variant="h6" component="h4" gutterBottom>
-                    These are common questions parents have had regarding competition logistics, content, and signups. <br />
-                    Email us at {' '}<Link href="lincolnmathclubseattle@gmail.com" color="primary">lincolnmathclubseattle@gmail.com </Link>
+                <Divider sx={{ marginY: "8px" }} />
+                <Typography>
+                    These are common questions parents have had regarding competition logistics, content, and signups.
+                    <br />
+                    Email us at {' '}<Link href="mailto:lincolnmathclubseattle@gmail.com">lincolnmathclubseattle@gmail.com </Link>
                     if you have further inquiries!
                 </Typography>
+                <div className="h-8"></div>
                 {faqItems.map((item, index) => (
                     <Accordion key={index}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -130,7 +133,7 @@ export default function Faq() {
                         </AccordionDetails>
                     </Accordion>
                 ))}
-            </Box>
+            </div>
         </div>
     );
 }
