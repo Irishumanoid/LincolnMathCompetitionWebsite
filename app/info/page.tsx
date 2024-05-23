@@ -40,7 +40,7 @@ export default function Info() {
                             <li><b>Super Sprint:</b> 25 problems of increasing difficulty in 30 minutes, completed individually</li>
                             <li><b>Mental Mania:</b> With no paper and pencil allowed, each question will be read aloud twice by the proctor, and students will then be given 10 more seconds to complete each of the 10 problem.</li>
                             <li><b>Team Tumble:</b> Teams of 3 compete to complete 10 problems of a higher difficulty compared to the individual round in 25 minutes.</li>
-                            <li><b>Lynx Bowl:</b> A team-based college themed game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li>
+                            <li><b>Lynx Lightning Round:</b> A team-based game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li>
                         </ul>
                         <li>Lunch will be provided at 12:20pm</li>
                         <li>Grading will happen during/after lunch</li>
@@ -55,7 +55,7 @@ export default function Info() {
                     <Typography>
                         These costs are coming out of club funds. For that reason, we ask that you consider donating to our club! It will help us keep doing events like these annually.
                         <br /><br />
-                        We suggest a donation of 5$ if your child is attending the competition and receiving pizza. You can donate at the event or the SchoolPay link below:
+                        We suggest a donation of $5 if your child is attending the competition and receiving pizza. You can donate at the event or the SchoolPay link below:
                     </Typography>
                     <Button href="https://www.schoolpay.com/pay/for/Math-Club-Donations/SdmwPMB"
                         target="_blank"
@@ -88,6 +88,10 @@ export default function Info() {
                                     <TableCell align="right">10:30am - 11am</TableCell>
                                 </TableRow>
                                 <TableRow>
+                                    <TableCell>Jelly Bean Guessing Game</TableCell>
+                                    <TableCell align="right">10:45am - 11am</TableCell>
+                                </TableRow>
+                                <TableRow>
                                     <TableCell>Opening Ceremony</TableCell>
                                     <TableCell align="right">11:00am - 11:30am</TableCell>
                                 </TableRow>
@@ -108,7 +112,7 @@ export default function Info() {
                                     <TableCell align="right">1:00pm - 1:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>Lynx Bowl</TableCell>
+                                    <TableCell>Lynx Lightning Round</TableCell>
                                     <TableCell align="right">1:30pm - 2:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
