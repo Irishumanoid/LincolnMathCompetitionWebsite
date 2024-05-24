@@ -23,7 +23,7 @@ const competitionRounds: CompetitionRound[] = [
     },
     {
         name: "Lynx Lightning Round",
-        description: "Teams of 3 compete in preliminary head-to-head speed math rounds with other teams, within classrooms, before advancing to the Commons final round. Problems will be projected on the board and the first team to write down the correct answer will win the respective round."
+        description: "Teams of 3 compete in preliminary head-to-head speed math rounds with other teams, within classrooms, before advancing to the final round that parents can watch in the Commons. Problems will be projected on the board and the first team to write down the correct answer will win the respective round."
     }
 ];
 
@@ -92,11 +92,11 @@ const faqItems: FAQItem[] = [
     },
     {
         question: 'Should parents be staying during the competition? ',
-        answer: 'You are not required to stay during the competition, but we will be giving a presentation for interested parents about the summer math tutoring program we asked about on the registration form! Beyond that, you are welcome to volunteer to help us grade during the competition As for watching the competition, parents can watch their students compete in the final round of the competition. More information on that is below. '
+        answer: 'You are not required to stay during the competition, but we will be giving a presentation for interested parents about the summer math tutoring program we asked about on the registration form! Beyond that, you are welcome to volunteer to help us grade during the competition As for watching the competition, parents can watch their students compete in the final round of the competition.'
     },
     {
         question: 'Will we be providing food? ',
-        answer: 'We are happy to announce that we will be providing free pizza for all students attending, as well as any parent volunteers! We will however not be able to accommodate dietary restrictions, so we recommend you bring a bag lunch from home if needed. We also recommend bringing a snack and water, for during the rounds. '
+        answer: 'We are happy to announce that we will be providing free pizza for all students attending! We will however not be able to accommodate dietary restrictions, so we recommend you bring a bag lunch from home if needed. We also recommend bringing a snack and water, for during the rounds. '
     },
     {
         question: 'Does the competition cost any money? ',
