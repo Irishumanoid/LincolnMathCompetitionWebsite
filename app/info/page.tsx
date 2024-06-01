@@ -1,12 +1,12 @@
-import { Button, Divider, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
+import { Button, Divider, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
 import HeroImage from '../../public/imgs/background_info.jpg';
+import ImagePaper from '@/components/ImagePaper';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
 
 export default function Info() {
-
     return (
         <div className="flex flex-col">
             <div className="relative w-full shadow-lg">
@@ -122,6 +122,28 @@ export default function Info() {
                             </TableBody>
                         </Table>
                     </TableContainer>
+                    <div id="schedule" className="max-w-3xl w-full">
+                        <br /><br />
+                        <Typography variant="h5">
+                            Competition Sponsors
+                        </Typography>
+                        <Divider sx={{marginY: "8px"}} />
+                        <br />
+                        <Grid container spacing={2} justifyContent="space-between">
+                            <Grid item xs={8}>
+                                <ImagePaper imageSrc="imgs/aopslogo.jpg" imageAlt="Art of Problem Solving"/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <ImagePaper imageSrc="/imgs/lhslogo.webp" imageAlt="Lincoln High School"/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
+                            </Grid>
+                            <Grid item xs={8}>
+                                <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
+                            </Grid>
+                        </Grid>
+                    </div>
                 </div>
             </div>
             <div>
