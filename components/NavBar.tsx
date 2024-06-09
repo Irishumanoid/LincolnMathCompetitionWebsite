@@ -8,6 +8,8 @@ const navItems = [
     {name: 'Home', href: '/'},
     {name: 'Information', href: '/info'},
     {name: 'FAQ', href: '/faq'},
+    {name: 'photo gallery', href:'/photo_gallery'},
+    {name: 'problems and results', href:'/prob_res'}
 ];
 
 export default function NavBar() {
