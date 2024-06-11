@@ -159,7 +159,7 @@ const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualR
         case 'option2':
             return <IndividualTable individualOut={individualData} />;
         default:
-            return <div>Please select an option</div>;
+            return <div></div>;
     }
 };
 
