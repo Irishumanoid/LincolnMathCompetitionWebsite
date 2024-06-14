@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Select, MenuItem, FormControl, InputLabel, Box, Typography, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, List } from '@mui/material';
+import { Select, MenuItem, FormControl, InputLabel, Box, Typography, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, List, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import { SelectChangeEvent } from '@mui/material/Select';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Papa from 'papaparse';
 
 interface TeamData {
@@ -171,14 +172,14 @@ const Dropdown: React.FC = () => {
     };
 
     return (
-        <Box sx={{ minWidth: 120 }}>
+        <Box sx={{ minWidth: 200 }}>
             <FormControl fullWidth>
-                <InputLabel id="dropdown-label">Options</InputLabel>
+                <InputLabel id="dropdown-label">Competition Results</InputLabel>
                 <Select
                     labelId="dropdown-label"
                     id="dropdown"
                     value={selectedOption}
-                    label="Options"
+                    label="Competition Results"
                     onChange={handleChange}
                 >
                     <MenuItem value="option1">2024 Team</MenuItem>
@@ -193,6 +194,26 @@ const Dropdown: React.FC = () => {
     );
 };
 
+type PDFViewerProps = {
+    loc: string;
+};
+
+const PDFViewer: React.FC<PDFViewerProps> = ({ loc }) => {
+    return (
+        <div>
+            <iframe src={loc+'#toolbar=0&navpanes=1'} width='100%' height='500px' />
+        </div>
+    )
+}
+
+const pdfLocList = ['/comp_psets/Mental_Mania_Competitive.pdf', 
+    '/comp_psets/Mental_Mania_Introductory.pdf',
+    '/comp_psets/Super_Sprint_Competitive.pdf',
+    '/comp_psets/Super_Sprint_Introductory.pdf',
+    '/comp_psets/Team_Tumble_Competitive.pdf',
+    '/comp_psets/Team_Tumble_Introductory.pdf'];
+
+
 export default function ProbRes() {
     return (
         <div className="flex flex-col items-center w-full">
@@ -201,6 +222,19 @@ export default function ProbRes() {
                     Competition Results
                 </Typography>
                 <Divider sx={{ marginY: "8px" }} />
+                {pdfLocList.map((pset, index) => {
+                    const fileName = pset.split('.')[0].split('/').pop()?.replaceAll('_', ' ') + ' Problems';
+                    return (
+                        <Accordion key={index}>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <Typography>{fileName}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <PDFViewer loc={pset} />
+                            </AccordionDetails>
+                        </Accordion>
+                    );
+                })}
             </div>
             <Dropdown />
         </div>

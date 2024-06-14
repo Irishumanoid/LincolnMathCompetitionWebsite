@@ -128,7 +128,6 @@ export default function Faq() {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>{item.answer}</Typography>
-                            {/* Render the formatted_info component if it exists */}
                             {item.formatted_info && <item.formatted_info />}
                         </AccordionDetails>
                     </Accordion>
