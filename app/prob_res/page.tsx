@@ -24,6 +24,7 @@ interface CompYear {
     selectedYear: string;
     teamResDir: string;
     individualResDir: string;
+    isMM: boolean;
 }
 
 function createTeamData(
@@ -59,17 +60,20 @@ const loadCSV = (csvUrl: string): Promise<any[]> => {
 
 interface TeamProps {
     teamOut: TeamData[];
+    isMM: boolean;
 }
 
 interface IndividualProps {
     individualOut: IndividualData[];
+    isMM: boolean;
 }
 
-const TeamTable: React.FC<TeamProps> = ({ teamOut }) => {
+const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM }) => {
+    const roundType = isMM ? 'Math Masters' :'Numerical Novices';
     return (
         <List>
             <TableContainer component={Paper}>
-                <Typography>Results for Team Rounds</Typography>
+                <Typography>Results for {roundType} Round </Typography>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
@@ -95,11 +99,12 @@ const TeamTable: React.FC<TeamProps> = ({ teamOut }) => {
     );
 }
 
-const IndividualTable: React.FC<IndividualProps> = ({ individualOut }) => {
+const IndividualTable: React.FC<IndividualProps> = ({ individualOut, isMM }) => {
+    const roundType = isMM ? 'Math Masters' :'Numerical Novices';
     return (
         <List>
             <TableContainer component={Paper}>
-                <Typography>Results for Individual Rounds</Typography>
+                <Typography>Results for {roundType} Round </Typography>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
@@ -126,7 +131,7 @@ const IndividualTable: React.FC<IndividualProps> = ({ individualOut }) => {
 }
 
 //create another comp content obj and pass it csv loc params
-const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualResDir }) => {
+const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualResDir, isMM }) => {
     const [teamData, setTeamData] = useState<TeamData[]>([]);
     const [individualData, setIndividualData] = useState<IndividualData[]>([]);
 
@@ -156,9 +161,9 @@ const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualR
 
     switch (selectedYear) {
         case 'option1':
-            return  <TeamTable teamOut={teamData} />;
+            return  <TeamTable teamOut={teamData} isMM={isMM}/>;
         case 'option2':
-            return <IndividualTable individualOut={individualData} />;
+            return <IndividualTable individualOut={individualData} isMM={isMM}/>;
         default:
             return <div></div>;
     }
@@ -187,8 +192,8 @@ const Dropdown: React.FC = () => {
                 </Select>
             </FormControl>
             <Box mt={2}>
-                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalMMTeam.csv' individualResDir='/comp_results/finalMMIndividual.csv'/>
-                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalNNTeam.csv' individualResDir='/comp_results/finalNNIndividual.csv'/>
+                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalMMTeam.csv' individualResDir='/comp_results/finalMMIndividual.csv' isMM={true}/>
+                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalNNTeam.csv' individualResDir='/comp_results/finalNNIndividual.csv' isMM={false}/>
             </Box>
         </Box>
     );
