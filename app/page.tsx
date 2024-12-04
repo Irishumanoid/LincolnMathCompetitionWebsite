@@ -47,11 +47,7 @@ export default function Home() {
                         </Typography>
                     </ CardContent>
                     <CardActions sx={{ padding: "16px" }}>
-                        <Button href="https://forms.office.com/pages/responsepage.aspx?id=WNEx1HRgMkiHg1Hqb23SJ_L1aZAVTPxCi-YvwKCadtVUOVQ3TEdGR0hOWlFKQVhCRjlVWEJOMlkyWC4u"
-                            variant="contained"
-                        >
-                            Register
-                        </Button>
+                        <Typography fontSize={20} style={{color: 'red'}}>Registration will open in January 2025</Typography>
                     </CardActions>
                 </Card>
 
