@@ -72,7 +72,7 @@ export default function Info() {
                     <Divider sx={{marginY: "8px"}} />
 
                     <Typography>
-                        If you're interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://forms.office.com/r/5sVndKp6rN">this link</Link> 
+                        If you&apos;re interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://forms.office.com/r/5sVndKp6rN">this link</Link> 
                     </Typography>
                     <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
                 </div>
