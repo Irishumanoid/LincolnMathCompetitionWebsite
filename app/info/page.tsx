@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
+import { Button, Divider, Grid, Link, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
 import HeroImage from '../../public/imgs/background_info.jpg';
@@ -65,13 +65,25 @@ export default function Info() {
                         Donate
                     </Button>
                 </div>
+                <div id="tshirts" className="max-w-3xl w-full">
+                    <Typography variant="h5">
+                        Competition T-shirts
+                    </Typography>
+                    <Divider sx={{marginY: "8px"}} />
+
+                    <Typography>
+                        If you're interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://forms.office.com/r/5sVndKp6rN">this link</Link> 
+                    </Typography>
+                    <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
+                </div>
                 <div id="schedule" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Competition Schedule
                     </Typography>
+                    <Typography> If you would like to </Typography>
                     <Divider sx={{marginY: "8px"}} />
                     <Typography>
-                        Date of competition: Saturday, June 8th
+                        Date of competition: Sunday, April 6th
                     </Typography>
                     <br />
                     <TableContainer component={Paper}>

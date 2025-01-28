@@ -47,7 +47,7 @@ export default function Home() {
                         </Typography>
                     </ CardContent>
                     <CardActions sx={{ padding: "16px" }}>
-                        <Typography fontSize={20} style={{color: 'red'}}>Registration will open in January 2025</Typography>
+                        <Typography fontSize={20}>Access the registration form <Link href="https://forms.office.com/r/42b2h56tfY">here</Link> </Typography>
                     </CardActions>
                 </Card>
 
@@ -58,7 +58,7 @@ export default function Home() {
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
                         <ul className='list-disc ml-4'>
-                            <li><b>Date:</b> Saturday, June 8th at 10:30am (full schedule <Link href="/info#schedule">here</Link>)</li>
+                            <li><b>Date:</b> Sunday, April 6th 2025 from 10:30 am to 3 pm  (full schedule <Link href="/info#schedule">here</Link>)</li>
                             <li><b>Location:</b> Lincoln High School: <Link href="https://maps.app.goo.gl/ViWc33Y4vYL66wCF7" target="_blank">4400 Interlake Ave N, Seattle, WA 98103</Link></li>
                             <li><b>Directions:</b> Go to Lincoln High School and go through the large historic entrance on the west side (on Interlake Ave). 
                             Immediately upon entering, go forward until you reach the commons space with a projector and courtyard at the front.</li>

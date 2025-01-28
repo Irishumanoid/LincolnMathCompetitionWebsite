@@ -21,12 +21,14 @@ const Item = styled(Paper)(({ theme }) => ({
 interface ImagePaperProps {
   imageSrc: string;
   imageAlt: string;
+  width?: number;
+  height?: number;
 }
 
-const ImagePaper: React.FC<ImagePaperProps> = ({ imageSrc, imageAlt }) => {
+const ImagePaper: React.FC<ImagePaperProps> = ({ imageSrc, imageAlt, width, height }) => {
   return (
     <Item>
-      <Img src={imageSrc} alt={imageAlt} />
+      <Img src={imageSrc} alt={imageAlt} width={width} height={height}/>
     </Item>
   );
 }
