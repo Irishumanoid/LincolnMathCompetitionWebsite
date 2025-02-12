@@ -1,7 +1,7 @@
 import { Button, Card, CardActions, CardContent, Divider, Link, Typography } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
-import HeroImage from '../public/imgs/background.jpg';
+import HeroImage from '../public/imgs/comp8.jpg';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col">
             <div className="relative w-full shadow-lg">
                 <Image src={HeroImage} alt="Hero" className="w-full min-h-64 max-h-96 object-cover object-center"/>
-                <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-50 text-white items-center justify-center text-center p-4'>
+                <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-30 text-white items-center justify-center text-center p-4'>
                     <Typography variant="h6">
                         Welcome to the
                     </Typography>
