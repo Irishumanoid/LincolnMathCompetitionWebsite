@@ -19,11 +19,11 @@ const competitionRounds: CompetitionRound[] = [
     },
     {
         name: "Team Tumble",
-        description: "Teams of 3 compete to complete 10 problems of a higher difficulty compared to the individual round. 25 minutes."
+        description: "Teams of 4 compete to complete 10 problems of a higher difficulty compared to the individual round. 25 minutes."
     },
     {
         name: "Lynx Lightning Round",
-        description: "Teams of 3 compete in preliminary head-to-head speed math rounds with other teams, within classrooms, before advancing to the final round that parents can watch in the Commons. Problems will be projected on the board and the first team to write down the correct answer will win the respective round."
+        description: "Teams of 4 will compete in a relay round where the answer to the prior question plays a role in the current question. Winners of the classroom rounds will advance to a final playoff available to spectators."
     }
 ];
 

@@ -8,8 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Lincoln Math Competition",
-  description: `Lincoln Math Competition is a new annual math competition run by high schoolers that aims to 
-                expand interest in competition math among elementary schoolers within Seattle Public Schools.`,
+  description: `A free multi-round math competition for elementary schoolers`,
 };
 
 export default function RootLayout({
@@ -20,6 +19,9 @@ export default function RootLayout({
   
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
