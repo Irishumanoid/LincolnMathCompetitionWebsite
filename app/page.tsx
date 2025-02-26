@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, Divider, Link, Typography } from '@mui/material';
+import { Card, CardActions, CardContent, Divider, Link, Typography } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
 import HeroImage from '../public/imgs/comp8.jpg';
