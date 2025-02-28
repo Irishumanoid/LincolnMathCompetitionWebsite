@@ -100,7 +100,7 @@ export default function Info() {
                     <Divider sx={{marginY: "8px"}} />
 
                     <Typography>
-                        If you&apos;re interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://forms.office.com/r/5sVndKp6rN">this link</Link> 
+                        If you&apos;re interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://www.schoolpay.com/pay/for/2025-Math-Competition-Tshirt/Sc02vGC">this link</Link> 
                     </Typography>
                     <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
                 </div>
@@ -128,7 +128,7 @@ export default function Info() {
                                     <TableCell align="right">10:30am - 11am</TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>Jelly Bean Guessing Game</TableCell>
+                                    <TableCell>Gummy Guessing Game</TableCell>
                                     <TableCell align="right">10:45am - 11am</TableCell>
                                 </TableRow>
                                 <TableRow>
@@ -141,23 +141,23 @@ export default function Info() {
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Mental Mania</TableCell>
-                                    <TableCell align="right">12:10pm - 12:20pm</TableCell>
+                                    <TableCell align="right">12:10pm - 12:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Lunch</TableCell>
-                                    <TableCell align="right">12:20pm - 1:00pm</TableCell>
+                                    <TableCell align="right">12:30pm - 1:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Team Tumble</TableCell>
-                                    <TableCell align="right">1:00pm - 1:30pm</TableCell>
+                                    <TableCell align="right">1:30pm - 2:00pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Lynx Lightning Round</TableCell>
-                                    <TableCell align="right">1:30pm - 2:30pm</TableCell>
+                                    <TableCell align="right">2:00pm - 3:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Closing Ceremony</TableCell>
-                                    <TableCell align="right">2:30pm - 3:00pm</TableCell>
+                                    <TableCell align="right">3:30pm - 4:00pm</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
