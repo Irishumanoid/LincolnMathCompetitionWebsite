@@ -68,7 +68,7 @@ const faqItems: FAQItem[] = [
     },
     {
         question: 'How can I register for the competition?',
-        answer: 'Due to the unexpected number of responses, our registration form is closed for the year. Check back next year!'
+        answer: "Register on our home page, or at https://forms.office.com/r/42b2h56tfY"
     },
     {
         question: 'Are there any eligibility requirements?',
