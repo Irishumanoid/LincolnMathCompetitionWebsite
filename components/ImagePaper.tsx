@@ -23,13 +23,16 @@ interface ImagePaperProps {
   imageAlt: string;
   width?: number;
   height?: number;
+  includeBoundary?: boolean;
 }
 
-const ImagePaper: React.FC<ImagePaperProps> = ({ imageSrc, imageAlt, width, height }) => {
+const ImagePaper: React.FC<ImagePaperProps> = ({ imageSrc, imageAlt, width, height, includeBoundary }) => {
   return (
+    includeBoundary ? 
     <Item>
       <Img src={imageSrc} alt={imageAlt} width={width} height={height}/>
-    </Item>
+    </Item> :
+    <Img src={imageSrc} alt={imageAlt} width={width} height={height}/>
   );
 }
 

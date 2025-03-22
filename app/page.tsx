@@ -1,7 +1,8 @@
-import { Card, CardActions, CardContent, Divider, Link, Typography } from '@mui/material';
+import { Box, Card, CardActions, CardContent, Divider, Grid, Link, Typography } from '@mui/material';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
 import HeroImage from '../public/imgs/comp8.jpg';
+import ImagePaper from '@/components/ImagePaper';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
 
@@ -63,6 +64,7 @@ export default function Home() {
                             <li><b>Directions:</b> Go to Lincoln High School and go through the performing arts/sports entrance on the east side (on Woodlawn Ave). 
                             Immediately upon entering, turn right and enter the gynamsium.</li>
                         </ul>
+                        <ImagePaper imageSrc="/imgs/parking.png" imageAlt="parking" width={350} height={350} includeBoundary={false}/>
                     </ CardContent>
                 </Card>
             </div>

@@ -1,5 +1,5 @@
 'use client'
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Grid, Link, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Grid, IconButton, Link, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
 import { Shadows_Into_Light_Two } from 'next/font/google';
@@ -8,6 +8,15 @@ import ImagePaper from '@/components/ImagePaper';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
+
+const linkFunction = async (uri: string, title: string) => {
+    const resp = await fetch(uri);
+    const imageBlob = await resp.blob();
+    const imLink = document.createElement('a');
+    imLink.href = URL.createObjectURL(imageBlob);
+    imLink.download = title;
+    imLink.click();
+}
 
 export default function Info() {
     return (
@@ -60,15 +69,7 @@ export default function Info() {
                                     <DownloadIcon 
                                         fontSize='large' 
                                         sx={{ cursor: 'pointer' }} 
-                                        onClick={async () => {
-                                            const uri = '/lmc_2025_flyer.png';
-                                            const resp = await fetch(uri);
-                                            const imageBlob = await resp.blob();
-                                            const imLink = document.createElement('a');
-                                            imLink.href = URL.createObjectURL(imageBlob);
-                                            imLink.download = 'lmc_2025_flyer';
-                                            imLink.click();
-                                        }}
+                                        onClick={() => linkFunction("/lmc_2025_flyer.png", "lmc_2025_flyer")}
                                     />
                                 </Stack>
                             </AccordionDetails>
@@ -100,7 +101,7 @@ export default function Info() {
                     <Divider sx={{marginY: "8px"}} />
 
                     <Typography>
-                        If you&apos;re interested in buying a competition t-shirt, please preorder it at (open up into design) <Link href="https://www.schoolpay.com/pay/for/2025-Math-Competition-Tshirt/Sc02vGC">this link</Link> 
+                        If you&apos;re interested in buying a competition t-shirt, please preorder it at <Link href="https://www.schoolpay.com/pay/for/2025-Math-Competition-Tshirt/Sc02vGC">this link</Link> 
                     </Typography>
                     <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
                 </div>
@@ -108,7 +109,9 @@ export default function Info() {
                     <Typography variant="h5">
                         Competition Schedule
                     </Typography>
-                    <Typography> If you would like to </Typography>
+                    <Typography onClick={() => linkFunction("/imgs/schedule.png", "lmc_2025_schedule")}> 
+                        Download a detailed version of the schedule here
+                    </Typography>
                     <Divider sx={{marginY: "8px"}} />
                     <Typography>
                         Date of competition: Sunday, April 6th
@@ -170,17 +173,35 @@ export default function Info() {
                         <Divider sx={{marginY: "8px"}} />
                         <br />
                         <Grid container spacing={2} justifyContent="space-between">
-                            <Grid item xs={8}>
-                                <ImagePaper imageSrc="imgs/aopslogo.jpg" imageAlt="Art of Problem Solving"/>
-                            </Grid>
                             <Grid item xs={4}>
-                                <ImagePaper imageSrc="/imgs/lhslogo.webp" imageAlt="Lincoln High School"/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
+                                <IconButton onClick={() => window.open("https://artofproblemsolving.com/", "AoPS")}>
+                                    <ImagePaper imageSrc="imgs/aopslogo.jpg" imageAlt="Art of Problem Solving"/>
+                                </IconButton>
                             </Grid>
                             <Grid item xs={8}>
-                                <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
+                                <IconButton onClick={() => window.open("https://www.tuttabella.com/", "Tutta_Bella")}>
+                                    <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <IconButton onClick={() => window.open("https://live.poshenloh.com/", "LIVE")}>
+                                    <ImagePaper imageSrc="/imgs/live.png" imageAlt="LIVE by Poh Shen Loh"></ImagePaper>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <IconButton onClick={() => window.open("https://lincolnhs.seattleschools.org/", "Lincoln")}>
+                                    <ImagePaper imageSrc="/imgs/lhslogo.webp" imageAlt="Lincoln High School"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.olympiapizzaspaghetti.com/", "Olympia_Pizza")}>
+                                    <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.desmos.com/", "Desmos")}>
+                                    <ImagePaper imageSrc="/imgs/desmos.jpg" imageAlt="Desmos Logo"></ImagePaper>
+                                </IconButton>
                             </Grid>
                         </Grid>
                     </div>
