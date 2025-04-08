@@ -190,9 +190,9 @@ const Dropdown: React.FC = () => {
     };
 
     return (
-        <Box sx={{ minWidth: 200 }}>
+        <Box sx={{ minWidth: 200 }} paddingTop={2}>
             <FormControl fullWidth>
-                <InputLabel id="dropdown-label">Competition Results</InputLabel>
+                <InputLabel id="dropdown-label">Competition Scores</InputLabel>
                 <Select
                     labelId="dropdown-label"
                     id="dropdown"
@@ -226,37 +226,57 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ loc }) => {
     )
 }
 
-const pdfLocList = ['/comp_psets/Mental_Mania_Competitive.pdf', 
-    '/comp_psets/Mental_Mania_Introductory.pdf',
-    '/comp_psets/Super_Sprint_Competitive.pdf',
-    '/comp_psets/Super_Sprint_Introductory.pdf',
-    '/comp_psets/Team_Tumble_Competitive.pdf',
-    '/comp_psets/Team_Tumble_Introductory.pdf'];
 
 
 export default function ProbRes() {
+    const [year, setYear] = useState<string>('2025');
+
+    let pdfLocList = [`/comp_psets/${year}/Mental_Mania_Competitive.pdf`, 
+        `/comp_psets/${year}/Mental_Mania_Introductory.pdf`,
+        `/comp_psets/${year}/Super_Sprint_Competitive.pdf`,
+        `/comp_psets/${year}/Super_Sprint_Introductory.pdf`,
+        `/comp_psets/${year}/Team_Tumble_Competitive.pdf`,
+        `/comp_psets/${year}/Team_Tumble_Introductory.pdf`];
+
     return (
         <div className="flex flex-col items-center w-full">
-            <div className='p-4 mt-8 max-w-3xl w-full'>
-                <Typography variant="h4" component="h1" gutterBottom>
+                <Typography variant="h4" component="h1" gutterBottom paddingTop={3}>
                     Competition Results
                 </Typography>
-                <Divider sx={{ marginY: "8px" }} />
-                {pdfLocList.map((pset, index) => {
-                    const fileName = pset.split('.')[0].split('/').pop()?.replaceAll('_', ' ') + ' Problems';
-                    return (
-                        <Accordion key={index}>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                <Typography>{fileName}</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <PDFViewer loc={pset} />
-                            </AccordionDetails>
-                        </Accordion>
-                    );
-                })}
-            </div>
-            <Dropdown />
+                <Divider sx={{ my: 2, width: '50%' }} />
+                <Box width={150} paddingTop={2}>
+                    <FormControl fullWidth>
+                        <InputLabel id="dropdown-label">Past Tests</InputLabel>
+                        <Select
+                            label="Past Tests"
+                            labelId="dropdown-label"
+                            id="dropdown"
+                            value={year}
+                            onChange={(e) => setYear(e.target.value)}
+                        >
+                            <MenuItem value="2024">2024</MenuItem>
+                            <MenuItem value="2025">2025</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
+            {year != '' && 
+                <div className='p-4 mt-8 max-w-3xl w-full'>
+                    {pdfLocList.map((pset, index) => {
+                        const fileName = pset.split('.')[0].split('/').pop()?.replaceAll('_', ' ') + ' Problems';
+                        return (
+                            <Accordion key={index}>
+                                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                    <Typography>{`${fileName} ${year}`}</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <PDFViewer loc={pset} />
+                                </AccordionDetails>
+                            </Accordion>
+                        );
+                    })}
+                </div>
+            }
+            <Dropdown/>
         </div>
     );
 }

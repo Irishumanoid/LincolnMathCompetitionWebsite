@@ -1,64 +1,242 @@
-Team Number,Team Name,Team Member 1,Team Member 2,Team Member 3,Team Member 4,Room #,Mental Mania Composite Score,Team Tumble Answers Correct,Team Tumble Score,Lynx Lightning Rounds Won,Lynx Lightning Score,Final Team Score
-RN105,Number Ninjas,William Daniel Cook,Stephen Liang,Aarav Gowda,Theo Francis,112,30,7,21,,0,51
-RN112,,Alexander Liu,Gilbert Liu,Grace Lin,William Xu,112,29.25,5,15,,0,44.25
-RN108,,Adrian Shih,Max Dobroski,Theo Vasilopoulos,Jack Giese,112,28.5,4,12,,0,40.5
-AN311,,Stellan Peters,Leo McBride,Frances Sutter,Eleanor Franco-Malone,112,29.25,2,6,,0,35.25
-RN101,,Maricela Trujillo,Adrianna Bransky,Ivan Lopez-Garcia,Naod Gebru,112,29.25,1,3,,0,32.25
-RN135,,Winter Danneman,Estee Rysavy,Abigail Chan,Angie Lee,109,28.5,7,21,,0,49.5
-RN136,The Mathe-cat-icians,Russell Greene,Eason Zhang,Henry Siems,Adrian Cichy,109,28.5,6,18,,0,46.5
-RN133,,Ella Melchner,Dani Staulcup,Keira To,Harlow Egli,109,27,5,15,,0,42
-RN132,The Limit Does Not Exist,Emmy Slonecker,Eleanor Williams,Vivian Dettling,Piper Taylor,109,30,4,12,,0,42
-RN137,The Golden Pufferfish,Ryker Hulit,Eli Brasch,Bodhi Saetia,Vihaan Sabharwal,109,28.5,3,9,,0,37.5
-RN134,The Mathmachickens,Sarah Kusowski,Paige Richey,Cleopatra Strietelmeier,Cora Stivers,109,28.5,2,6,,0,34.5
-RN128,4^2 (i.e. Four Squared),Callum Chiu,Pierce Niu,Adrika Mukherjee,Emmett Kelly,108,28.5,6,18,,0,46.5
-RN131,Quantum Cougars ,Rex Ouyang ,Brady Leong ,Danny Lombardi,Teddy Greene,108,27,5,15,,0,42
-RN138,,Milan Koyadan Esquivel,Sebastian Barbera,Santiago Matuk Calderon,River Scarr,108,28.5,5,15,,0,43.5
-RN130,Preppy Paperclips,Rory Newman,Hazel Barch,Gabby Morlan,Meera Parker,108,30,3,9,,0,39
-AN303,,Colin Sullivan,Eleanor Shao,Mijuas Belay,Simon Belay,108,30,2,6,,0,36
-RN129,,Etta Jencius,Hollis Cole,,,108,27,1,3,,0,30
-RN124,,Joaquin McNeil,Lukas Korby,Joaquin Vicuna Illanes,Ryan Gockel,107,25.5,7,21,,0,46.5
-RN122,,Colin Thomas,Milo Svedin,William O'Callaghan,Reid Wierusz,107,27,5,15,,0,42
-RN139,Clever Calculators,Naomi Reif,Neesa Moore,Juliana Naiden,Aisling Noone,107,29.25,4,12,,0,41.25
-RN123,The Dragons ,Nathan LeMoine ,Marcos Nicholas Gomez ,Johann Tittelfitz ,Yasin Hamzeh ,107,24,3,9,,0,33
-RN125,,Mika Vandewinkel,Elena Lopez,Taylor Gehret,Ella Brown,107,26.25,3,9,,0,35.25
-RN126,AgleBROs,Oliver Cruz,Hendrix Kruger,Hunter Liao,Miles Amerasinghe,107,28.5,2,6,,0,34.5
-RN117,Cascadia Dragons,Evan Roy,Ethan Roy,Ibrahim Lugo,Veeran Chandrasekaran,106,27.75,8,24,,0,51.75
-RN121,TBD,Johan (Jolly) Lundell,Duncan Lundell,Theo Moura,Vaughn Butler,106,24.75,5,15,,0,39.75
-RN140,,Jack Dines,Oliver Vergottini,Alastair Mitchell,Nikolai Silk,106,27,3,9,,0,36
-RN119,MAKE Math Matter,Emma Loeppky,Mia Apostol,Addie Foreman,Keva Bannon,106,28.5,3,9,,0,37.5
-RN120,,Mari Chiu-Sairenji,Emily Hogue-Yoshioka,Noemie Yen,Lena Turner,106,15.75,,0,,0,15.75
-RN118,,Vansh Chabria ,Mark Tayah,Rihaan Puri,Bennett Maloney ,106,23.25,,0,,0,23.25
-RN107,,Lev Basinski,Nathaniel Jencks,Asa Stoermer,Kevin Yao,12,24.75,7,21,,0,45.75
-RN114,The Falcons,Isabelle Potocnik,Lainey Schober,Marley Chaudhari,Chichi Plunkett,12,27,5,15,,0,42
-RN141,,Ash Denny-Brown,Eleanor Isaacson,Emmett Kittredge Wampler,Elliott Lubke,12,27.75,5,15,,0,42.75
-RN116,1.618,Mason Zhang,William Wang,Zachary Zhao,Nathan Xing,12,24,4,12,,0,36
-AN315,,Shivarsh Mritunjai,Pranav Vijsh,Gauthan Perianayagam,Clayton Lawarby,12,24,4,12,,0,36
-RN113,Pi Pals,Ellie Kanzler,Maya Baugh,Ella Kwong-Spantos,Sami Manikandan,12,24.75,4,12,,0,36.75
-AN310,,Audrey Stone,Ronen Marshall,,,12,27,4,12,,0,39
-RN115,,Rory Orr,Owen Rippey,Ada Goodwin,Anne Overland,12,20.25,4,12,,0,32.25
-RN100,,Bennett Karr-Lee,Mason Butler,Deshaun Kent,Kelseey Sierra Salazar,12,24,3,9,,0,33
-RN127,Shut your Pi Holes,Amos Chen,Ethan Hu-Houghland,Clayton Sheckells,Evan Schafer,12,27,3,9,,0,36
-RN111,,Alvin Chen,Elsa Tang,Daniel Tao,Hannah He,11,24.75,,0,,0,24.75
-RN110,,Von Hylland,Griffin Mullin,Aiden Gadzhiyeva,Miles Cohen,11,22.5,,0,,0,22.5
-RN148,,Sophia Patlan Ayala,Andy Garcia Vasquez,Liam Loughary,,11,24,,0,,0,24
-RN109,SROTII,Tyler Xu,Evelyn Zhang,Nathan Tan,Reuben Lieblich,11,15.75,,0,,0,15.75
-RN142,Magnolia Mathletes,Roya Drees-Imam,Max Sathre,Edie Peck,Bee Peck,11,21,,0,,0,21
-RN144,RBMC,Natalie Ho,Vitaly Astafiev,Angelina Dydychkina ,Kristina Dydychkina ,10,21,6,18,,0,39
-RN143,Red Hot Corndogs,Jacob Zimmer II,Tomas Lang Rodriguez,Coleman Lawrence ,Kai Klarich,10,22.5,5,15,,0,37.5
-RN106,Calculists,Vidur Jariwala,Bennett Lin,Cameron Yorks,Isaac Shechner,10,25.5,3,9,,0,34.5
-RN146,Crazy Calculators,Evan Yang,Logan Sinsley,Rainer Findlay,Echo Harvey,10,21,2,6,,0,27
-RN104,C00l C4t5,Yayoi Baker,Addison Shie,Naia Xia,Eva Letourneau,9,20.25,3,9,,0,29.25
-AN300,,Kei MizumChi,Tomoki Yan,Calvin Byron,Kaiya Mao,9,17.25,3,9,,0,26.25
-AN301,,Sam Williams,Mateo Moran,Asher Arai,Lincoln Zhu,9,18.75,2,6,,0,24.75
-RN103,Awesome Algebra Orcas,Sara Serrato-Martin,Sonia Greenman,Claudia Hagen,Alice Sannikova,9,21,1,3,,0,24
-RN102,,Jane Warren,Elaf Usman,Diego Garcia-Vega,Oliver Fults,9,12.75,1,3,,0,15.75
-RN145,,Cole Fawcett,Sebastian Rajaram,Gus Patrikios,,8,19.5,7,21,,0,40.5
-AN312,,Elliot Gross,Benjamin Newell,Jonathan Newell,Jojo Arai,8,18.75,3,9,,0,27.75
-AN314,,Samir Soriano-Ghelani,Marina Soriano-Ghelani,Jinghan Li,aiden jong,8,18,3,9,,0,27
-AN313,,Arman Bhatt,Tony Le,Fern Brett,Cy Jordan Guerrero,8,15.75,2,6,,0,21.75
-RN147,,Jeffry Shannon,Mikey Nordstrand,Adonay Weldearegay,,8,18.75,,0,,0,18.75
-AN305,,Jack Cao,Nathan Belay,Elan Maxwell,Samantha Li,7,12.75,6,18,,0,30.75
-AN306,,Muhsinat Hussein ,Parker Simpson Topping,Lucas Edmondson,,7,9.75,5,15,,0,24.75
-AN308,,Josina Mason,Isaac Pollack ,Fitz Chastain,Stephanie Ji,7,0,3,9,,0,9
-AN307,,Madi Campbell,Alex Wen,Tongyang Xie,Owen Flynn-Kelly,7,0,3,9,,0,9
-AN309,,Soren Blair,Hugo Barnsley,Kolin Chan,Oliver Dines,7,0,3,9,,0,9
+Participant #,Name,Super Sprint,Mental Mania,Total
+RN112,Gilbert Liu,21,10,31
+RN109,Nathan Tan,20,10,30
+RN107,Kevin Yao,19,10,29
+RN122,Milo Svedin,19,10,29
+AN305,Jack Cao,18,10,28
+RN112,Grace Lin,18,10,28
+RN145,Gus Patrikios,18,10,28
+AN305,Samantha Li,18,9,27
+RN115,Owen Rippey,18,9,27
+RN117,Ibrahim Lugo,18,9,27
+RN107,Asa Stoermer,17,10,27
+RN109,Reuben Lieblich,17,10,27
+RN112,William Xu,17,10,27
+RN117,Ethan Roy,17,10,27
+RN143,Coleman Lawrence,17,10,27
+RN110,Von Hylland,17,9,26
+RN117,Veeran Chandrasekaran,17,9,26
+RN138,Santiago Matuk Calderon,16,10,26
+RN141,Elliott Lubke,16,10,26
+RN143,Jacob Zimmer II,16,10,26
+AN309,Hugo Barnsley,16,9,25
+RN132,Eleanor Williams,16,9,25
+AN305,Elan Maxwell,15,10,25
+AN310,Ronen Marshall,15,10,25
+RN109,Evelyn Zhang,15,10,25
+RN136,Henry Siems,15,10,25
+AN301,Lincoln Zhu,15,9,24
+RN112,Alexander Liu,15,9,24
+RN114,Isabelle Potocnik,15,9,24
+RN123,Marcos Nicholas Gomez ,15,9,24
+RN136,Eason Zhang,15,9,24
+RN138,River Scarr,15,9,24
+AN307,Alex Wen,14,10,24
+RN108,Jack Giese,14,10,24
+RN124,Lukas Korby,14,10,24
+RN128,Callum Chiu,14,10,24
+RN135,Angie Lee,14,10,24
+RN136,Adrian Cichy,14,10,24
+RN141,Eleanor Isaacson,14,10,24
+AN306,Lucas Edmondson,15,8,23
+RN124,Joaquin McNeil,14,9,23
+RN141,Ash Denny-Brown,14,9,23
+RN105,Aarav Gowda,13,10,23
+RN121,Johan (Jolly) Lundell,13,10,23
+RN130,Rory Newman,13,10,23
+RN136,Russell Greene,13,10,23
+AN308,Fitz Chastain,13,9,22
+AN310,Audrey Stone,13,9,22
+RN106,Cameron Yorks,13,9,22
+RN107,Nathaniel Jencks,13,9,22
+RN110,Griffin Mullin,13,9,22
+RN130,Hazel Barch,13,9,22
+RN144,Vitaly Astafiev,13,9,22
+RN145,Sebastian Rajaram,13,9,22
+AN307,Owen Flynn-Kelly,12,10,22
+AN312,Elliot Gross,12,10,22
+RN106,Vidur Jariwala,12,10,22
+RN115,Rory Orr,12,10,22
+RN116,Mason Zhang,12,10,22
+RN118,Rihaan Puri,12,10,22
+RN120,Noemie Yen,12,10,22
+RN128,Adrika Mukherjee,12,10,22
+RN143,Tomas Lang Rodriguez,12,10,22
+RN144,Natalie Ho,12,10,22
+RN144,Angelina Dydychkina ,12,10,22
+RN145,Cole Fawcett,12,10,22
+AN306,Parker Simpson Topping,13,8,21
+RN123,Johann Tittelfitz ,13,8,21
+RN137,Ryker Hulit,13,8,21
+RN141,Emmett Kittredge Wampler,13,8,21
+RN110,Aiden Gadzhiyeva,12,9,21
+RN113,Ella Kwong-Spantos,12,9,21
+RN128,Emmett Kelly,12,9,21
+RN131,Danny Lombardi,12,9,21
+RN132,Vivian Dettling,12,9,21
+RN137,Vihaan Sabharwal,12,9,21
+RN138,Sebastian Barbera,12,9,21
+RN105,William Daniel Cook,11,10,21
+RN113,Sami Manikandan,11,10,21
+RN127,Clayton Sheckells*,11,10,21
+AN311,Stellan Peters,12,8,20
+AN315,Shivarsh Mritunjai,12,8,20
+RN110,Miles Cohen,12,8,20
+RN124,Joaquin Vicuna Illanes,12,8,20
+RN128,Pierce Niu,12,8,20
+AN309,Soren Blair,11,9,20
+AN314,aiden jong,11,9,20
+AN315,Pranav Vijsh,11,9,20
+RN122,Colin Thomas,11,9,20
+RN127,Amos Chen,11,9,20
+AN315,Gauthan Perianayagam,10,10,20
+RN113,Maya Baugh,10,10,20
+RN123,Nathan LeMoine ,10,10,20
+RN132,Emmy Slonecker,10,10,20
+RN147,Mikey Nordstrand,10,10,20
+RN116,Zachary Zhao,12,7,19
+AN311,Eleanor Franco-Malone,11,8,19
+AN313,Cy Jordan Guerrero,11,8,19
+RN131,Teddy Greene,11,8,19
+AN309,Kolin Chan,10,9,19
+RN113,Ellie Kanzler,10,9,19
+RN117,Evan Roy,10,9,19
+RN118,Bennett Maloney ,10,9,19
+RN122,William O'Callaghan,10,9,19
+RN138,Milan Koyadan Esquivel,10,9,19
+RN140,Jack Dines,10,9,19
+RN137,Eli Brasch,9,10,19
+RN144,Kristina Dydychkina ,9,10,19
+RN127,Evan Schafer,19,,19
+AN300,Kaiya Mao,11,7,18
+AN312,Benjamin Newell,11,7,18
+RN126,Hunter Liao,11,7,18
+RN140,Oliver Vergottini,11,7,18
+AN300,Calvin Byron,10,8,18
+RN105,Stephen Liang,10,8,18
+RN105,Theo Francis,10,8,18
+RN119,Keva Bannon,10,8,18
+RN125,Taylor Gehret,10,8,18
+RN127,Ethan Hu-Houghland,10,8,18
+AN305,Nathan Belay,9,9,18
+RN108,Max Dobroski,9,9,18
+RN120,Lena Turner,9,9,18
+RN121,Duncan Lundell,9,9,18
+RN124,Ryan Gockel,9,9,18
+RN133,Ella Melchner,9,9,18
+RN139,Neesa Moore,9,9,18
+RN139,Aisling Noone,9,9,18
+RN135,Abigail Chan,8,10,18
+RN139,Naomi Reif,8,10,18
+RN143,Kai Klarich,8,10,18
+AN309,Oliver Dines,12,5,17
+AN303,Colin Sullivan,10,7,17
+AN308,Stephanie Ji,9,8,17
+RN104,Naia Xia,9,8,17
+RN106,Bennett Lin,9,8,17
+RN108,Adrian Shih,9,8,17
+RN108,Theo Vasilopoulos,9,8,17
+RN114,Lainey Schober,9,8,17
+RN125,Elena Lopez,9,8,17
+AN311,Frances Sutter,8,9,17
+AN315,Clayton Lawarby,8,9,17
+RN107,Lev Basinski,8,9,17
+RN119,Emma Loeppky,8,9,17
+RN121,Vaughn Butler,8,9,17
+RN120,Mari Chiu-Sairenji,10,6,16
+AN307,Tongyang Xie,9,7,16
+RN129,Hollis Cole,9,7,16
+RN142,Bee Peck,9,7,16
+RN101,Adrianna Bransky,8,8,16
+RN119,Addie Foreman,8,8,16
+RN125,Mika Vandewinkel,8,8,16
+RN147,Adonay Weldearegay,8,8,16
+AN312,Jojo Arai,7,9,16
+RN133,Dani Staulcup,7,9,16
+RN135,Winter Danneman,7,9,16
+RN142,Edie Peck,7,9,16
+AN301,Sam Williams,6,10,16
+RN146,Logan Sinsley,6,10,16
+RN126,Oliver Cruz,9,6,15
+AN314,Samir Soriano-Ghelani,8,7,15
+RN104,Addison Shie,8,7,15
+RN132,Piper Taylor,8,7,15
+RN101,Naod Gebru,7,8,15
+RN103,Sara Serrato-Martin,7,8,15
+RN118,Vansh Chabria ,7,8,15
+RN126,Hendrix Kruger,7,8,15
+RN129,Etta Jencius,7,8,15
+RN131,Rex Ouyang ,7,8,15
+RN137,Bodhi Saetia,6,9,15
+RN140,Nikolai Silk,15,,15
+RN100,Mason Butler,8,6,14
+RN102,Diego Garcia-Vega,8,6,14
+AN312,Jonathan Newell,7,7,14
+AN314,Jinghan Li,7,7,14
+RN120,Emily Hogue-Yoshioka,7,7,14
+RN135,Estee Rysavy,7,7,14
+AN308,Isaac Pollack ,6,8,14
+RN119,Mia Apostol,6,8,14
+RN116,William Wang,7,6,13
+RN130,Meera Parker,7,6,13
+AN303,Mijuas Belay,6,7,13
+RN104,Yayoi Baker,6,7,13
+AN313,Fern Brett,5,8,13
+AN314,Marina Soriano-Ghelani,5,8,13
+RN115,Ada Goodwin,5,8,13
+RN123,Yasin Hamzeh ,5,8,13
+AN306,Muhsinat Hussein ,4,9,13
+RN103,Claudia Hagen,4,9,13
+RN116,Nathan Xing,3,10,13
+AN307,Madi Campbell,6,6,12
+RN115,Anne Overland,6,6,12
+RN131,Brady Leong ,6,6,12
+RN130,Gabby Morlan,5,7,12
+AN303,Simon Belay,4,8,12
+RN142,Max Sathre,4,8,12
+RN102,Elaf Usman,7,4,11
+RN100,Kelseey Sierra Salazar,6,5,11
+AN300,Tomoki Yan,5,6,11
+AN301,Asher Arai,5,6,11
+AN308,Josina Mason,5,6,11
+RN118,Mark Tayah,5,6,11
+RN134,Sarah Kusowski,5,6,11
+RN148,Andy Garcia Vasquez,5,6,11
+RN100,Bennett Karr-Lee,4,7,11
+RN114,Chichi Plunkett,4,7,11
+RN122,Reid Wierusz,4,7,11
+RN134,Cleopatra Strietelmeier,4,7,11
+RN146,Evan Yang,4,7,11
+AN313,Tony Le,7,3,10
+RN140,Alastair Mitchell,6,4,10
+AN313,Arman Bhatt,5,5,10
+RN134,Cora Stivers,5,5,10
+AN300,Kei MizumChi,4,6,10
+RN125,Ella Brown,4,6,10
+RN111,Daniel Tao,3,7,10
+RN134,Paige Richey,3,7,10
+RN106,Isaac Shechner,0,10,10
+RN109,Tyler Xu,,10,10
+RN104,Eva Letourneau,10,,10
+AN303,Eleanor Shao,4,5,9
+RN103,Alice Sannikova,4,5,9
+RN142,Roya Drees-Imam,4,5,9
+RN100,Deshaun Kent,2,7,9
+RN148,Sophia Patlan Ayala,2,7,9
+RN139,Juliana Naiden,,9,9
+RN101,Maricela Trujillo,4,4,8
+RN101,Ivan Lopez-Garcia,4,4,8
+RN114,Marley Chaudhari,4,4,8
+RN126,Miles Amerasinghe,3,5,8
+AN311,Leo McBride,2,6,8
+RN148,Liam Loughary,2,6,8
+AN301,Mateo Moran,0,8,8
+RN111,Alvin Chen,2,5,7
+RN111,Elsa Tang,2,5,7
+RN103,Sonia Greenman,,7,7
+RN102,Oliver Fults,7,,7
+RN102,Jane Warren,3,3,6
+RN111,Hannah He,2,4,6
+RN133,Harlow Egli,2,4,6
+RN133,Keira To,1,2,3
+RN146,Echo Harvey,3,,3
