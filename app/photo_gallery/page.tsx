@@ -2,6 +2,90 @@ import { Divider, IconButton, ImageList, ImageListItem, ImageListItemBar, Typogr
 
 const itemData = [
     {
+        img: '/imgs/2025-15.png',
+        title: 'parent presentation',
+        rows: 4,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-14.png',
+        title: 'protors walking kids to testing rooms',
+        rows: 4,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-13.png',
+        title: 'selling competition t-shirts',
+        rows: 3,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-12.png',
+        title: 'preparing competitors for testing',
+        rows: 3,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-11.png',
+        title: 'working hard on the Super Sprint',
+        rows: 4,
+        cols: 3,
+    },
+    {
+        img: '/imgs/2025-10.png',
+        title: 'pondering the questions deeply',
+        rows: 4,
+        cols: 1,
+    },
+    {
+        img: '/imgs/2025-9.png',
+        title: 'giving participants name tags',
+        rows: 4,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-7.png',
+        title: 'check in',
+        rows: 4,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-6.png',
+        title: 'hosts getting ready to present',
+        rows: 3,
+        cols: 4,
+    },
+    {
+        img: '/imgs/2025-5.png',
+        title: 'the gummy bear guessing game in full swing',
+        rows: 3,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-4.png',
+        title: 'presenters at the opening ceremony',
+        rows: 3,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-3.png',
+        title: 'students gearing up to compete',
+        rows: 3,
+        cols: 4,
+    },
+    {
+        img: '/imgs/2025-1.png',
+        title: 'opening ceremony in the gym',
+        rows: 4,
+        cols: 2,
+    },
+    {
+        img: '/imgs/2025-2.png',
+        title: 'parents and students',
+        rows: 4,
+        cols: 2,
+    },
+    {
         img: '/imgs/comp1.jpg',
         title: 'competitors taking a lunchtime break',
         rows: 4,
