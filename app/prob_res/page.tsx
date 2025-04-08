@@ -21,9 +21,7 @@ interface IndividualData {
 }
 
 interface CompYear {
-    selectedYear: string;
-    teamResDir: string;
-    individualResDir: string;
+    selectedTest: string;
     isMM: boolean;
 }
 
@@ -61,6 +59,7 @@ const loadCSV = (csvUrl: string): Promise<any[]> => {
 interface TeamProps {
     teamOut: TeamData[];
     isMM: boolean;
+    totalOnly: boolean;
 }
 
 interface IndividualProps {
@@ -68,7 +67,7 @@ interface IndividualProps {
     isMM: boolean;
 }
 
-const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM }) => {
+const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM, totalOnly }) => {
     const roundType = isMM ? 'Math Masters' :'Numerical Novices';
     return (
         <List>
@@ -78,8 +77,12 @@ const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM }) => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Names</TableCell>
-                            <TableCell align="right">Team Tumble</TableCell>
-                            <TableCell align="right">Lynx Lightning</TableCell>
+                            {!totalOnly && 
+                                <Box>
+                                    <TableCell align="right">Team Tumble</TableCell>
+                                    <TableCell align="right">Lynx Lightning</TableCell>
+                                </Box>
+                            }
                             <TableCell align="right">Total Score</TableCell>
                         </TableRow>
                     </TableHead>
@@ -87,8 +90,12 @@ const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM }) => {
                         {teamOut.map((row, index) => (
                             <TableRow key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                 <TableCell component="th" scope="row">{row.names}</TableCell>
-                                <TableCell align="right">{row.tumbleScore}</TableCell>
-                                <TableCell align="right">{row.lightningScore}</TableCell>
+                                {!totalOnly &&
+                                    <Box>
+                                        <TableCell align="right">{row.tumbleScore}</TableCell>
+                                        <TableCell align="right">{row.lightningScore}</TableCell>
+                                    </Box>
+                                }
                                 <TableCell align="right">{row.total}</TableCell>
                             </TableRow>
                         ))}
@@ -130,14 +137,20 @@ const IndividualTable: React.FC<IndividualProps> = ({ individualOut, isMM }) => 
     );
 }
 
-//create another comp content obj and pass it csv loc params
-const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualResDir, isMM }) => {
+const CompContent: React.FC<CompYear> = ({ selectedTest, isMM }) => {
     const [teamData, setTeamData] = useState<TeamData[]>([]);
     const [individualData, setIndividualData] = useState<IndividualData[]>([]);
+    
+    const res = selectedTest.match(/(\d+)/);
+    let year;
+    if (res && res.length > 0) {
+        year = res[0];
+    }
+    const resDir = `/comp_results/${year}/${isMM ? 'mm' : 'nn'}_${selectedTest}.csv`;
 
     useEffect(() => {
-        if (selectedYear === 'option1') {
-            loadCSV(teamResDir).then(data => {
+        if (selectedTest.includes('team')) {
+            loadCSV(resDir).then(data => {
                 const teamResults = data.slice(0, -1).map(item => createTeamData(
                     `${item['Team Member 1']}, ${item['Team Member 2']}, ${item['Team Member 3']}`,
                     Number(item['Team Tumble']),
@@ -146,8 +159,8 @@ const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualR
                 ));
                 setTeamData(teamResults);
             });
-        } else if (selectedYear === 'option2') {
-            loadCSV(individualResDir).then(data => {
+        } else if (selectedTest.includes('individual')) {
+            loadCSV(resDir).then(data => {
                 const individualResults = data.slice(0, -1).map(item => createIndividualData(
                     item['Name'],
                     Number(item['Super Sprint']),
@@ -157,15 +170,15 @@ const CompContent: React.FC<CompYear> = ({ selectedYear, teamResDir, individualR
                 setIndividualData(individualResults);
             });
         }
-    }, [selectedYear]);
+    }, [selectedTest]);
 
-    switch (selectedYear) {
-        case 'option1':
-            return  <TeamTable teamOut={teamData} isMM={isMM}/>;
-        case 'option2':
-            return <IndividualTable individualOut={individualData} isMM={isMM}/>;
-        default:
-            return <div></div>;
+
+    if (selectedTest.includes('team')) {
+        return  <TeamTable teamOut={teamData} isMM={isMM} totalOnly={Number(year) == 2025 ? true : false}/>;
+    } else if (selectedTest.includes('individual')) {
+        return <IndividualTable individualOut={individualData} isMM={isMM}/>;
+    } else { 
+        return <div></div>;
     }
 };
 
@@ -187,13 +200,15 @@ const Dropdown: React.FC = () => {
                     label="Competition Results"
                     onChange={handleChange}
                 >
-                    <MenuItem value="option1">2024 Team</MenuItem>
-                    <MenuItem value="option2">2024 Individual</MenuItem>
+                    <MenuItem value="team2024">2024 Team</MenuItem>
+                    <MenuItem value="individual2024">2024 Individual</MenuItem>
+                    <MenuItem value="team2025">2025 Team</MenuItem>
+                    <MenuItem value="individual2025">2025 Individual</MenuItem>
                 </Select>
             </FormControl>
             <Box mt={2}>
-                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalMMTeam.csv' individualResDir='/comp_results/finalMMIndividual.csv' isMM={true}/>
-                <CompContent selectedYear={selectedOption} teamResDir='/comp_results/finalNNTeam.csv' individualResDir='/comp_results/finalNNIndividual.csv' isMM={false}/>
+                <CompContent selectedTest={selectedOption} isMM={true}/>
+                <CompContent selectedTest={selectedOption} isMM={false}/>
             </Box>
         </Box>
     );
