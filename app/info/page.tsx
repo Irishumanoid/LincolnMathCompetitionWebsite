@@ -61,7 +61,7 @@ export default function Info() {
                     <Box padding={5}>
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                <Typography> View Our 2025 Competition Flyer </Typography>
+                                <Typography> View Our 2026 Competition Flyer </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Stack direction='row' display="flex" justifyContent="center" alignItems="top" width="100%">

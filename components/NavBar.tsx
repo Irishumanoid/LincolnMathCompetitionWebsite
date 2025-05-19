@@ -13,7 +13,6 @@ const navItems = [
 ];
 
 export default function NavBar() {
-
     const [open, setOpen] = useState(false);
 
     const handleDrawerToggle = useCallback(() => {
