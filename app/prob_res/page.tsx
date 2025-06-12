@@ -77,12 +77,8 @@ const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM, totalOnly }) => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Names</TableCell>
-                            {!totalOnly && 
-                                <Box>
-                                    <TableCell align="right">Team Tumble</TableCell>
-                                    <TableCell align="right">Lynx Lightning</TableCell>
-                                </Box>
-                            }
+                            {!totalOnly && <TableCell align="right">Team Tumble</TableCell>}
+                            {!totalOnly &&  <TableCell align="right">Lynx Lightning</TableCell>}
                             <TableCell align="right">Total Score</TableCell>
                         </TableRow>
                     </TableHead>
@@ -90,12 +86,8 @@ const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM, totalOnly }) => {
                         {teamOut.map((row, index) => (
                             <TableRow key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                 <TableCell component="th" scope="row">{row.names}</TableCell>
-                                {!totalOnly &&
-                                    <Box>
-                                        <TableCell align="right">{row.tumbleScore}</TableCell>
-                                        <TableCell align="right">{row.lightningScore}</TableCell>
-                                    </Box>
-                                }
+                                 {!totalOnly && <TableCell align="right">{row.tumbleScore}</TableCell>}
+                                 {!totalOnly && <TableCell align="right">{row.lightningScore}</TableCell>}
                                 <TableCell align="right">{row.total}</TableCell>
                             </TableRow>
                         ))}
