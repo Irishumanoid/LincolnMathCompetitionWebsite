@@ -11,7 +11,9 @@ export default function Home() {
     return (
         <div className="flex flex-col">
             <div className="relative w-full shadow-lg">
+                {/** Main layout image */}
                 <Image src={HeroImage} alt="Hero" className="w-full min-h-64 max-h-96 object-cover object-center"/>
+                {/** Title component, wrappped in div to center both title texts */}
                 <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-30 text-white items-center justify-center text-center p-4'>
                     <Typography variant="h6">
                         Welcome to the
@@ -21,7 +23,10 @@ export default function Home() {
                     </Typography>
                 </div>
             </div>
+            {/** Body for info cards, specifies padding and distance */}
             <div className="flex flex-wrap justify-center p-4 sm:p-8 gap-8">
+                {/** Card is an MUI object, put body inside CardContent
+                 * This card has a larger heading, divider, and LMC description*/}
                 <Card id="about" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">
@@ -36,7 +41,7 @@ export default function Home() {
                         </Typography>
                     </ CardContent>
                 </Card>
-
+                {/** Registration Card with link to registration form (keep this updated) */}
                 <Card id="registration" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">
@@ -51,7 +56,7 @@ export default function Home() {
                         <Typography fontSize={20}>Access the registration form <Link href="https://forms.office.com/r/42b2h56tfY">here</Link> </Typography>
                     </CardActions>
                 </Card>
-
+                {/** Time and date information with bullet point list and ImagePaper container for parking map */}
                 <Card id="time-and-date" variant="elevation" className="max-w-xl">
                     <CardContent>
                         <Typography variant="h5">

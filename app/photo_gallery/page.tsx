@@ -325,6 +325,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
     };
 }
 
+
 export default function photo_gallery() {
     return (
         <div className="flex flex-col items-center w-full">
@@ -339,8 +340,9 @@ export default function photo_gallery() {
                     cols={4}
                     rowHeight={121}
                 >
+                {/** Display each image with given dimensions */}
                     {itemData.map((item) => (
-                        //min dimensions
+                        // Min dimensions
                         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
                             <img
                                 {...srcset(item.img, 121, item.rows, item.cols)}

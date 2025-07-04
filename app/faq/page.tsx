@@ -3,11 +3,16 @@ import { Box, Container, Typography, Link, Accordion, AccordionSummary, Accordio
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
+/**
+ * Interface with fields for a competition round,
+ * makes it easy to initialize rounds with a json structure and iterate through them
+ */
 interface CompetitionRound {
     name: string;
     description: string;
 }
 
+// List of competition rounds
 const competitionRounds: CompetitionRound[] = [
     {
         name: "Super Sprint",
@@ -27,6 +32,10 @@ const competitionRounds: CompetitionRound[] = [
     }
 ];
 
+/**
+ * Functional component that iterates through the list of competition rounds and displays the round and its name
+ * @returns stack of competition round names and round descriptions
+ */
 const CompetitionRoundsList: React.FC = () => {
     return (
         <Box sx={{ p: 3 }}>
@@ -44,14 +53,20 @@ const CompetitionRoundsList: React.FC = () => {
     );
 };
 
+
+
+/**
+ * @param question FAQ question
+ * @param answer FAQ response
+ * @param formatted_info Optional parameter for formatted text (e.g., for competition descriptions)
+ */
 interface FAQItem {
     question: string;
     answer: string;
     formatted_info?: React.FC;
 }
 
-//add optional field above for formatted text (e.g., for competition descriptions)
-
+// functional component wrapping the list of competition rounds
 const round_details: React.FC = () => {
     return (
         <Container>
@@ -60,6 +75,7 @@ const round_details: React.FC = () => {
     );
 };
 
+// list of FAQ questions and answers
 const faqItems: FAQItem[] = [
     {
         question: 'What is the format of the competition?',
@@ -104,8 +120,7 @@ const faqItems: FAQItem[] = [
     }
 ];
 
-
-
+// Functional component for FAQ page 
 export default function Faq() {
     return (
         <div className="flex flex-col items-center">
@@ -121,6 +136,7 @@ export default function Faq() {
                     if you have further inquiries!
                 </Typography>
                 <div className="h-8"></div>
+                {/** Displays each FAQ item as dropdown menu that expands when question is clicked */}
                 {faqItems.map((item, index) => (
                     <Accordion key={index}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>

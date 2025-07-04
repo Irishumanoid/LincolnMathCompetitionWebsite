@@ -9,6 +9,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
 
+/** Download images by fetching response data when querying file location relative to \public directory */
 const linkFunction = async (uri: string, title: string) => {
     const resp = await fetch(uri);
     const imageBlob = await resp.blob();
@@ -18,10 +19,12 @@ const linkFunction = async (uri: string, title: string) => {
     imLink.click();
 }
 
+// Functional component for information page
 export default function Info() {
     return (
         <div className="flex flex-col">
             <div className="relative w-full shadow-lg">
+                {/** Background image */}
                 <Image src={HeroImage} alt="Hero" className="w-full min-h-64 max-h-96 object-cover object-center"/>
                 <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-50 text-white items-center justify-center text-center p-4'>
                     <Typography variant="h2" sx={fontFamily.style}>
@@ -30,6 +33,7 @@ export default function Info() {
                 </div>
             </div>
             <div className="flex flex-col items-center p-4 sm:p-8 gap-8">
+                {/** Bullet point list of competition rules */}
                 <div id="rules" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Rules
@@ -40,6 +44,7 @@ export default function Info() {
                         <li>No discussion of answers until after completion of all rounds</li>
                     </ul>
                 </div>
+                {/** Bullet point lists of component structure, round descriptions, and main events throughout the day */}
                 <div id="structure" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Structure
@@ -58,6 +63,7 @@ export default function Info() {
                         <li>Grading will happen during/after lunch</li>
                         <li>Winners will be announced at the closing ceremony</li>
                     </ul>
+                    {/** Competition flyer dropdown display with MUI icon that downloads flyer when clicked */}
                     <Box padding={5}>
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -76,6 +82,8 @@ export default function Info() {
                         </Accordion>
                     </Box>
                 </div>
+                {/** Donation section wtih link to math club SchoolPay 
+                 * (make sure to update this or keep the link open if you guys want money) */}
                 <div id="donate" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Donate
@@ -94,6 +102,7 @@ export default function Info() {
                         Donate
                     </Button>
                 </div>
+                {/** Competition t-shirt section with SchoolPay link for purchase */}
                 <div id="tshirts" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Competition T-shirts
@@ -105,6 +114,7 @@ export default function Info() {
                     </Typography>
                     <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
                 </div>
+                {/** Competition schedule with downloadable image */}
                 <div id="schedule" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Competition Schedule
@@ -117,6 +127,8 @@ export default function Info() {
                         Date of competition: Sunday, April 6th
                     </Typography>
                     <br />
+                    {/** Table container for styling with TableHead for column names 
+                     * and events happening throughout the day as TableRows  */}
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 300 }} aria-label="Schedule Table">
                             <TableHead>
@@ -165,7 +177,8 @@ export default function Info() {
                             </TableBody>
                         </Table>
                     </TableContainer>
-                    <div id="schedule" className="max-w-3xl w-full">
+                    {/** Resizable image grid of competition sponsor logos */}
+                    <div id="sponsors" className="max-w-3xl w-full">
                         <br /><br />
                         <Typography variant="h5">
                             Competition Sponsors
@@ -173,6 +186,7 @@ export default function Info() {
                         <Divider sx={{marginY: "8px"}} />
                         <br />
                         <Grid container spacing={2} justifyContent="space-between">
+                            {/** xs specifies item size, when the icon is clicked it opens the provided link */}
                             <Grid item xs={4}>
                                 <IconButton onClick={() => window.open("https://artofproblemsolving.com/", "AoPS")}>
                                     <ImagePaper imageSrc="imgs/aopslogo.jpg" imageAlt="Art of Problem Solving"/>
