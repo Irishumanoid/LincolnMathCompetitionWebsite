@@ -306,7 +306,7 @@ export default function ProbRes() {
                         </Select>
                     </FormControl>
                 </Box>
-            {/** Given a year is set, get all PDF file paths and render PDFs via PDFViewer within respective dropdowns */}
+            {/** Given a year is set, get all PDFs and display with PDFViewer */}
             {year != '' && 
                 <div className='p-4 mt-8 max-w-3xl w-full'>
                     {pdfLocList.map((pset, index) => {
