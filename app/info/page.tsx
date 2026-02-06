@@ -92,7 +92,7 @@ export default function Info() {
                     <Typography>
                         These costs are coming out of club funds. For that reason, we ask that you consider donating to our club! It will help us keep doing events like these annually.
                         <br /><br />
-                        We suggest a donation of $5 if your child is attending the competition and receiving pizza. You can donate at the event or the SchoolPay link below:
+                        We suggest a donation of $5 if your child is attending the competition. You can donate at the event or the SchoolPay link below:
                     </Typography>
                     <Button href="https://www.schoolpay.com/pay/for/Math-Club-Donations/SdmwPMB"
                         target="_blank"

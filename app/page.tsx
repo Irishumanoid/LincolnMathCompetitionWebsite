@@ -36,7 +36,7 @@ export default function Home() {
                         <Typography>
                             Lincoln Math Competition is an annual contest held for elementary school students in the Seattle area. 
                             It is targeted for 4th-5th grade students, but younger students can also compete! The competition has two individual 
-                            rounds: Super Sprint and Mental Mania, and two team rounds: Team Tumble and Lynx Lightning Round. The overall difficulty can be compared 
+                            rounds: Super Sprint and Mental Mania, and one team round: Team Tumble. The overall difficulty can be compared 
                             to beginner MATHCOUNTS and is a great introductory competition for students interested in mathematics.
                         </Typography>
                     </ CardContent>
