@@ -77,14 +77,14 @@ const round_details: React.FC = () => {
 
 // list of FAQ questions and answers
 const faqItems: FAQItem[] = [
-    {
-        question: 'What is the format of the competition?',
-        answer: 'The competition consists of individual and team rounds, including Super Sprint, Mental Mania, Team Tumble, and Lynx Lightning Round.',
-        formatted_info: round_details
-    },
+    // {
+    //     question: 'What is the format of the competition?',
+    //     answer: 'The competition consists of individual and team rounds, including Super Sprint, Mental Mania, Team Tumble, and Lynx Lightning Round.',
+    //     formatted_info: round_details
+    // },
     {
         question: 'How can I register for the competition?',
-        answer: "Register on our home page, or at https://forms.office.com/r/42b2h56tfY"
+        answer: "Register with the link on our home page"
     },
     {
         question: 'Are there any eligibility requirements?',
@@ -108,15 +108,15 @@ const faqItems: FAQItem[] = [
     },
     {
         question: 'Should parents be staying during the competition? ',
-        answer: 'You are not required to stay during the competition, but we will be giving a presentation for interested parents about the summer math tutoring program we asked about on the registration form! Beyond that, you are welcome to volunteer to help us grade during the competition As for watching the competition, parents can watch their students compete in the final round of the competition.'
+        answer: 'You are not required to stay during the competition, but we will be giving a presentation for interested parents about the summer math tutoring program we asked about on the registration form! Beyond that, you are welcome to volunteer to help us grade during the competition.'
     },
-    {
-        question: 'Will we be providing food? ',
-        answer: 'We are happy to announce that we will be providing free pizza for all students attending! We will however not be able to accommodate dietary restrictions, so we recommend you bring a bag lunch from home if needed. We also recommend bringing a snack and water, for during the rounds. '
-    },
+    // {
+    //     question: 'Will we be providing food? ',
+    //     answer: 'We are happy to announce that we will be providing free pizza for all students attending! We will however not be able to accommodate dietary restrictions, so we recommend you bring a bag lunch from home if needed. We also recommend bringing a snack and water, for during the rounds. '
+    // },
     {
         question: 'Does the competition cost any money? ',
-        answer: 'Registration and food are completely free! However, this does mean the costs are coming out of club funds. For that reason, we ask that if you are willing, consider donating to our club! It will help us keep doing events like these annually. Please check the Information page for more details. '
+        answer: 'Registration is completely free! However, this does mean the costs are coming out of club funds. For that reason, we ask that if you are willing, consider donating to our club! It will help us keep doing events like these annually. Please check the Information page for more details. '
     }
 ];
 

@@ -64,7 +64,7 @@ export default function Home() {
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
                         <ul className='list-disc ml-4'>
-                            <li><b>Date:</b> Saturday, May 30th 2026 from 1:00 PM to 4:30 PM  (full schedule <Link href="/info#schedule">here</Link>)</li>
+                            <li><b>Date:</b> Saturday, May 30th 2026 from 1:00 PM to 4:30 PM  (full schedule coming soon)</li>
                             <li><b>Location:</b> Lincoln High School: <Link href="https://maps.app.goo.gl/ViWc33Y4vYL66wCF7" target="_blank">4400 Interlake Ave N, Seattle, WA 98103</Link></li>
                             <li><b>Directions:</b> Go to Lincoln High School and go through the performing arts/sports entrance on the east side (on Woodlawn Ave). 
                             Immediately upon entering, turn right and enter the gynamsium.</li>

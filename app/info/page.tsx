@@ -2,12 +2,12 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Grid, IconButton, Link, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, styled } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
-import { Shadows_Into_Light_Two } from 'next/font/google';
+import { Lato} from 'next/font/google';
 import HeroImage from '../../public/imgs/background_info.jpg';
 import ImagePaper from '@/components/ImagePaper';
 import DownloadIcon from '@mui/icons-material/Download';
 
-const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
+const fontFamily = Lato({ weight: "400", subsets: ["latin"] });
 
 /** Download images by fetching response data when querying file location relative to \public directory */
 const linkFunction = async (uri: string, title: string) => {
@@ -57,10 +57,10 @@ export default function Info() {
                             <li><b>Super Sprint:</b> 25 problems of increasing difficulty in 30 minutes, completed individually</li>
                             <li><b>Mental Mania:</b> With no paper and pencil allowed, each question will be read aloud twice by the proctor, and students will then be given 10 more seconds to complete each of the 10 problem.</li>
                             <li><b>Team Tumble:</b> Teams of 4 compete to complete 10 problems of a higher difficulty compared to the individual round in 25 minutes.</li>
-                            <li><b>Lynx Lightning Round:</b> A team-based game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li>
+                            {/* <li><b>Lynx Lightning Round:</b> A team-based game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li> */}
                         </ul>
-                        <li>Lunch will be provided at 12:20pm</li>
-                        <li>Grading will happen during/after lunch</li>
+                        {/* <li>Lunch will be provided at 12:20pm</li>
+                        <li>Grading will happen during/after lunch</li> */}
                         <li>Winners will be announced at the closing ceremony</li>
                     </ul>
                     {/** Competition flyer dropdown display with MUI icon that downloads flyer when clicked */}
@@ -71,12 +71,12 @@ export default function Info() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Stack direction='row' display="flex" justifyContent="center" alignItems="top" width="100%">
-                                    <Image src={'/lmc_2025_flyer.png'} alt={'LMC 2025 Flyer'} width={450} height={1200}/>
-                                    <DownloadIcon 
+                                    {/* <Image src={'/lmc_2025_flyer.png'} alt={'LMC 2025 Flyer'} width={450} height={1200}/> */}
+                                    {/* <DownloadIcon 
                                         fontSize='large' 
                                         sx={{ cursor: 'pointer' }} 
                                         onClick={() => linkFunction("/lmc_2025_flyer.png", "lmc_2025_flyer")}
-                                    />
+                                    /> */}
                                 </Stack>
                             </AccordionDetails>
                         </Accordion>
@@ -103,7 +103,7 @@ export default function Info() {
                     </Button>
                 </div>
                 {/** Competition t-shirt section with SchoolPay link for purchase */}
-                <div id="tshirts" className="max-w-3xl w-full">
+                {/* <div id="tshirts" className="max-w-3xl w-full">
                     <Typography variant="h5">
                         Competition T-shirts
                     </Typography>
@@ -113,10 +113,10 @@ export default function Info() {
                         If you&apos;re interested in buying a competition t-shirt, please preorder it at <Link href="https://www.schoolpay.com/pay/for/2025-Math-Competition-Tshirt/Sc02vGC">this link</Link> 
                     </Typography>
                     <ImagePaper imageSrc="imgs/tshirt.png" imageAlt="Math Club competition t-shirt" width={350} height={350}/>
-                </div>
+                </div> */}
                 {/** Competition schedule with downloadable image */}
                 <div id="schedule" className="max-w-3xl w-full">
-                    <Typography variant="h5">
+                    {/* <Typography variant="h5">
                         Competition Schedule
                     </Typography>
                     <Typography onClick={() => linkFunction("/imgs/schedule.png", "lmc_2025_schedule")}> 
@@ -126,10 +126,10 @@ export default function Info() {
                     <Typography>
                         Date of competition: Sunday, April 6th
                     </Typography>
-                    <br />
+                    <br /> */}
                     {/** Table container for styling with TableHead for column names 
                      * and events happening throughout the day as TableRows  */}
-                    <TableContainer component={Paper}>
+                    {/* <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 300 }} aria-label="Schedule Table">
                             <TableHead>
                                 <TableRow>
@@ -176,7 +176,7 @@ export default function Info() {
                                 </TableRow>
                             </TableBody>
                         </Table>
-                    </TableContainer>
+                    </TableContainer> */}
                     {/** Resizable image grid of competition sponsor logos */}
                     <div id="sponsors" className="max-w-3xl w-full">
                         <br /><br />
