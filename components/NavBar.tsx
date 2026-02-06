@@ -22,7 +22,7 @@ export default function NavBar() {
     const drawer = useMemo(() => (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                Lincoln Math Comp
+                Lincoln Math Competition
             </Typography>
             <Divider />
             <List>
@@ -55,7 +55,7 @@ export default function NavBar() {
                     component="div"
                     sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >
-                    <a href="/">Lincoln Math Comp</a>
+                    <a href="/">Lincoln Math Competition</a>
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {navItems.map((item) => (

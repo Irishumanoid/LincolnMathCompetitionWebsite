@@ -1,10 +1,10 @@
 import { Box, Card, CardActions, CardContent, Divider, Grid, Link, Typography } from '@mui/material';
 import Image from 'next/image';
-import { Shadows_Into_Light_Two } from 'next/font/google';
+import { Lato } from 'next/font/google';
 import HeroImage from '../public/imgs/comp8.jpg';
 import ImagePaper from '@/components/ImagePaper';
 
-const fontFamily = Shadows_Into_Light_Two({ weight: "400", subsets: ["latin"] });
+const fontFamily = Lato({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
 
@@ -14,12 +14,12 @@ export default function Home() {
                 {/** Main layout image */}
                 <Image src={HeroImage} alt="Hero" className="w-full min-h-64 max-h-96 object-cover object-center"/>
                 {/** Title component, wrappped in div to center both title texts */}
-                <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-30 text-white items-center justify-center text-center p-4'>
+                <div className='absolute top-0 w-full h-full flex flex-col bg-black bg-opacity-55 text-white items-center justify-center text-center p-4'>
                     <Typography variant="h6">
                         Welcome to the
                     </Typography>
                     <Typography variant="h2" sx={fontFamily.style}>
-                        Lincoln Math Competition
+                        Lincoln   Math   Competition
                     </Typography>
                 </div>
             </div>
@@ -35,9 +35,9 @@ export default function Home() {
                         <Divider sx={{marginY: "8px"}} />
                         <Typography>
                             Lincoln Math Competition is an annual contest held for elementary school students in the Seattle area. 
-                            It is targeted for 4th-5th grade students, but anyone younger can compete! The competition has two individual 
+                            It is targeted for 4th-5th grade students, but younger students can also compete! The competition has two individual 
                             rounds: Super Sprint and Mental Mania, and two team rounds: Team Tumble and Lynx Lightning Round. The overall difficulty can be compared 
-                            to beginner MATHCOUNTS and is a great introductory competition for children interested in mathematics.
+                            to beginner MATHCOUNTS and is a great introductory competition for students interested in mathematics.
                         </Typography>
                     </ CardContent>
                 </Card>
@@ -49,12 +49,12 @@ export default function Home() {
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
                         <Typography>
-                            The competition is completely free. Individuals can register with the following link.
+                            The competition is completely free. The registration link will be available here starting on April 24.
                         </Typography>
                     </ CardContent>
-                    <CardActions sx={{ padding: "16px" }}>
+                    {/* <CardActions sx={{ padding: "16px" }}>
                         <Typography fontSize={20}>Access the registration form <Link href="https://forms.office.com/r/42b2h56tfY">here</Link> </Typography>
-                    </CardActions>
+                    </CardActions> */}
                 </Card>
                 {/** Time and date information with bullet point list and ImagePaper container for parking map */}
                 <Card id="time-and-date" variant="elevation" className="max-w-xl">
@@ -64,7 +64,7 @@ export default function Home() {
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
                         <ul className='list-disc ml-4'>
-                            <li><b>Date:</b> Sunday, April 6th 2025 from 10:30 am to 4 pm  (full schedule <Link href="/info#schedule">here</Link>)</li>
+                            <li><b>Date:</b> Saturday, May 30th 2026 from 1:00 PM to 4:30 PM  (full schedule <Link href="/info#schedule">here</Link>)</li>
                             <li><b>Location:</b> Lincoln High School: <Link href="https://maps.app.goo.gl/ViWc33Y4vYL66wCF7" target="_blank">4400 Interlake Ave N, Seattle, WA 98103</Link></li>
                             <li><b>Directions:</b> Go to Lincoln High School and go through the performing arts/sports entrance on the east side (on Woodlawn Ave). 
                             Immediately upon entering, turn right and enter the gynamsium.</li>
