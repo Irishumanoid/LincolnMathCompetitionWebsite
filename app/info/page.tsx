@@ -52,7 +52,7 @@ export default function Info() {
                     <Divider sx={{marginY: "8px"}} />
                     <ul className='list-disc ml-4'>
                         <li>Each round has two sections of competitors: an introductory group, and a competitive group</li>
-                        <li>The competition will consist of four rounds:</li>
+                        <li>The competition will consist of three rounds:</li>
                         <ul className='list-disc ml-8' style={{ listStyleType: "lower-roman" }}>
                             <li><b>Super Sprint:</b> 25 problems of increasing difficulty in 30 minutes, completed individually</li>
                             <li><b>Mental Mania:</b> With no paper and pencil allowed, each question will be read aloud twice by the proctor, and students will then be given 10 more seconds to complete each of the 10 problem.</li>
