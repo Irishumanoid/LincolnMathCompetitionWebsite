@@ -71,12 +71,12 @@ export default function Info() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Stack direction='row' display="flex" justifyContent="center" alignItems="top" width="100%">
-                                    {/* <Image src={'/lmc_2025_flyer.png'} alt={'LMC 2025 Flyer'} width={450} height={1200}/> */}
-                                    {/* <DownloadIcon 
+                                    <Image src={'/imgs/2026-flyer.png'} alt={'LMC 2026 Flyer'} width={450} height={1200}/>
+                                    <DownloadIcon 
                                         fontSize='large' 
                                         sx={{ cursor: 'pointer' }} 
-                                        onClick={() => linkFunction("/lmc_2025_flyer.png", "lmc_2025_flyer")}
-                                    /> */}
+                                        onClick={() => linkFunction("/imgs/2026-flyer.png", "lmc_2026_flyer")}
+                                    />
                                 </Stack>
                             </AccordionDetails>
                         </Accordion>
