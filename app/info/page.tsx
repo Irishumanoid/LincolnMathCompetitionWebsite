@@ -213,10 +213,11 @@ export default function Info() {
                                 </IconButton>
                             </Grid>
                             <Grid item xs={6}>
-                                <IconButton onClick={() => window.open("https://www.desmos.com/", "Desmos")}>
-                                    <ImagePaper imageSrc="/imgs/desmos.jpg" imageAlt="Desmos Logo"></ImagePaper>
+                                <IconButton onClick={() => window.open("https://www.wolfram.com/", "Wolfram")}>
+                                    <ImagePaper imageSrc="/imgs/wolframlogo.png" imageAlt="Wolfram Logo"></ImagePaper>
                                 </IconButton>
                             </Grid>
+                            
                         </Grid>
                     </div>
                 </div>
