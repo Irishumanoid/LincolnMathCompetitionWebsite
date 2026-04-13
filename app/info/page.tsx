@@ -197,6 +197,18 @@ export default function Info() {
                                     <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
                                 </IconButton>
                             </Grid>
+                            
+                            
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.awesomemath.org/", "AwesomeMath")}>
+                                    <ImagePaper imageSrc="/imgs/awesomemathlogo.png" imageAlt="AwesomeMath Logo"></ImagePaper>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.wolfram.com/", "Wolfram")}>
+                                    <ImagePaper imageSrc="/imgs/wolframlogo.png" imageAlt="Wolfram Logo"></ImagePaper>
+                                </IconButton>
+                            </Grid>
                             <Grid item xs={7}>
                                 <IconButton onClick={() => window.open("https://live.poshenloh.com/", "LIVE")}>
                                     <ImagePaper imageSrc="/imgs/live.png" imageAlt="LIVE by Poh Shen Loh"></ImagePaper>
@@ -210,11 +222,6 @@ export default function Info() {
                             <Grid item xs={6}>
                                 <IconButton onClick={() => window.open("https://www.olympiapizzaspaghetti.com/", "Olympia_Pizza")}>
                                     <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <IconButton onClick={() => window.open("https://www.wolfram.com/", "Wolfram")}>
-                                    <ImagePaper imageSrc="/imgs/wolframlogo.png" imageAlt="Wolfram Logo"></ImagePaper>
                                 </IconButton>
                             </Grid>
                             
