@@ -276,12 +276,12 @@ export default function ProbRes() {
     const [year, setYear] = useState<string>('2025');
 
     // List of competition problem sets for given year
-    let pdfLocList = [`/comp_psets/${year}/Mental_Mania_Competitive.pdf`, 
-        `/comp_psets/${year}/Mental_Mania_Introductory.pdf`,
-        `/comp_psets/${year}/Super_Sprint_Competitive.pdf`,
-        `/comp_psets/${year}/Super_Sprint_Introductory.pdf`,
-        `/comp_psets/${year}/Team_Tumble_Competitive.pdf`,
-        `/comp_psets/${year}/Team_Tumble_Introductory.pdf`];
+    let pdfLocList = [`/comp_psets/${year}/Mental_Mania_Masters.pdf`, 
+        `/comp_psets/${year}/Mental_Mania_Novices.pdf`,
+        `/comp_psets/${year}/Super_Sprint_Masters.pdf`,
+        `/comp_psets/${year}/Super_Sprint_Novices.pdf`,
+        `/comp_psets/${year}/Team_Tumble_Masters.pdf`,
+        `/comp_psets/${year}/Team_Tumble_Novices.pdf`];
 
     return (
         <div className="flex flex-col items-center w-full">
