@@ -47,7 +47,6 @@ export default function Home() {
                         <Typography variant="h5">
                             Registration
                         </Typography>
-                        
                         <Divider sx={{marginY: "8px"}} />
                         <Typography>
                             Registration for the 2026 Lincoln Math Competition is now OPEN! The competition is completely free.
