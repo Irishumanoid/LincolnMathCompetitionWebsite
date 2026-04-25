@@ -49,12 +49,12 @@ export default function Home() {
                         </Typography>
                         <Divider sx={{marginY: "8px"}} />
                         <Typography>
-                            Registration for the 2026 Lincoln Math Competition is now OPEN! The competition is completely free.
+                            The competition is completely free. The registration link will be available here starting on April 24.
                         </Typography>
                     </ CardContent>
-                    <CardActions sx={{ padding: "16px" }}>
-                        <Typography fontSize={20}>Access the registration form <Link href="https://docs.google.com/forms/d/e/1FAIpQLScXdMF40CtpRR2xKgvcSlqA5_SeCTnxUGsM7yBp1BB7osy5Sg/viewform" target="_blank">here</Link> </Typography>
-                    </CardActions>
+                    {/* <CardActions sx={{ padding: "16px" }}>
+                        <Typography fontSize={20}>Access the registration form <Link href="https://forms.office.com/r/42b2h56tfY">here</Link> </Typography>
+                    </CardActions> */}
                 </Card>
                 {/** Time and date information with bullet point list and ImagePaper container for parking map */}
                 <Card id="time-and-date" variant="elevation" className="max-w-xl">
