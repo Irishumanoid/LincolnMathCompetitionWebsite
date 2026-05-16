@@ -193,8 +193,8 @@ export default function Info() {
                                 </IconButton>
                             </Grid>
                             <Grid item xs={8}>
-                                <IconButton onClick={() => window.open("https://www.tuttabella.com/", "Tutta_Bella")}>
-                                    <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
+                                <IconButton onClick={() => window.open("https://www.kumon.com/home/", "Kumon")}>
+                                    <ImagePaper imageSrc="/imgs/kumonlogo.png" imageAlt="Kumon Logo"/>
                                 </IconButton>
                             </Grid>
                             
@@ -222,6 +222,11 @@ export default function Info() {
                             <Grid item xs={6}>
                                 <IconButton onClick={() => window.open("https://www.olympiapizzaspaghetti.com/", "Olympia_Pizza")}>
                                     <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.tuttabella.com/", "Tutta_Bella")}>
+                                    <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
                                 </IconButton>
                             </Grid>
                             
