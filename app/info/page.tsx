@@ -219,13 +219,19 @@ export default function Info() {
                                 </IconButton>
                             </Grid>
                             <Grid item xs={6}>
-                                <IconButton onClick={() => window.open("https://www.olympiapizzaspaghetti.com/", "Olympia_Pizza")}>
-                                    <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
+                                <IconButton onClick={() => window.open("https://pagliacci.com/", "Paggliaci_Pizza")}>
+                                    <ImagePaper imageSrc="/imgs/paggliacilogo.png" imageAlt="Paggliaci Pizza"/>
                                 </IconButton>
                             </Grid>
+                            
                             <Grid item xs={6}>
                                 <IconButton onClick={() => window.open("https://www.tuttabella.com/", "Tutta_Bella")}>
                                     <ImagePaper imageSrc="/imgs/tuttabellalogo.jpg" imageAlt="Tutta Bella Pizza"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <IconButton onClick={() => window.open("https://www.olympiapizzaspaghetti.com/", "Olympia_Pizza")}>
+                                    <ImagePaper imageSrc="/imgs/olympialogo.png" imageAlt="Olympia Pizza"/>
                                 </IconButton>
                             </Grid>
                             
