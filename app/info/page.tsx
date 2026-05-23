@@ -51,17 +51,16 @@ export default function Info() {
                     </Typography>
                     <Divider sx={{marginY: "8px"}} />
                     <ul className='list-disc ml-4'>
-                        <li>Each round has two sections of competitors: an introductory group, and a competitive group</li>
-                        <li>The competition will consist of three rounds:</li>
+                        <li>Participants will compete in 2 different divisions: Numerical Novices (for those new to math competitions), and Math Masters (for those with prior math competition experience) </li>
+                        <li style={{ marginTop: "8px" }}>The competition will consist of 3 rounds:</li>
                         <ul className='list-disc ml-8' style={{ listStyleType: "lower-roman" }}>
-                            <li><b>Super Sprint:</b> 25 problems of increasing difficulty in 30 minutes, completed individually</li>
-                            <li><b>Mental Mania:</b> With no paper and pencil allowed, each question will be read aloud twice by the proctor, and students will then be given 10 more seconds to complete each of the 10 problem.</li>
-                            <li><b>Team Tumble:</b> Teams of 4 compete to complete 10 problems of a higher difficulty compared to the individual round in 25 minutes.</li>
+                            <li style={{ marginTop: "5px" }}><b>Super Sprint:</b> Participants will individually solve 25 problems of increasing difficulty in 30 minutes.</li>
+                            <li style={{ marginTop: "5px" }}><b>Mental Mania:</b> Participants will solve 10 problems without using paper and pencil. Each question will be read aloud twice by the proctor. After each problem is read, students will be given 1 minute to solve the problem.</li>
+                            <li style={{ marginTop: "5px" }}><b>Team Tumble:</b> Participants will work together in teams of 4 to solve 10 challenging problems in 25 minutes.</li>
                             {/* <li><b>Lynx Lightning Round:</b> A team-based game with multiple rounds in which contestants will test their math skills in pairs with other teams.</li> */}
                         </ul>
-                        {/* <li>Lunch will be provided at 12:20pm</li>
-                        <li>Grading will happen during/after lunch</li> */}
-                        <li>Winners will be announced at the closing ceremony</li>
+                        <li style={{ marginTop: "8px" }}>After the 3 rounds are over, participants will take a short break. We will provide gummy fruit snacks and play Math Bingo.</li>
+                        <li style={{ marginTop: "8px" }}>Winners will be announced at the awards ceremony.</li>
                     </ul>
                     {/** Competition flyer dropdown display with MUI icon that downloads flyer when clicked */}
                     <Box padding={5}>

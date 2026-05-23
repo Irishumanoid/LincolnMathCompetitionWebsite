@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Select, MenuItem, FormControl, InputLabel, Box, Typography, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, List, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import { Select, MenuItem, FormControl, InputLabel, Box, Link, Typography, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, List, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import { SelectChangeEvent } from '@mui/material/Select';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Papa from 'papaparse';
@@ -289,7 +289,8 @@ export default function ProbRes() {
                     Competition Results
                 </Typography>
                 <Divider sx={{ my: 2, width: '50%' }} />
-                <Box width={150} paddingTop={2}>
+                <li>For information about the structure of each round of the competition, click <Link href="/info#structure">here</Link></li>
+                <Box width={150} paddingTop={5}>
                     {/** Selector for competition year */}
                     <FormControl fullWidth>
                         <InputLabel id="dropdown-label">Past Tests</InputLabel>
