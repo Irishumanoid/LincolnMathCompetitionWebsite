@@ -116,67 +116,67 @@ export default function Info() {
                 </div> */}
                 {/** Competition schedule with downloadable image */}
                 <div id="schedule" className="max-w-3xl w-full">
-                    {/* <Typography variant="h5">
+                    <Typography variant="h5">
                         Competition Schedule
                     </Typography>
-                    <Typography onClick={() => linkFunction("/imgs/schedule.png", "lmc_2025_schedule")}> 
+                    {/* <Typography onClick={() => linkFunction("/imgs/schedule.png", "lmc_2025_schedule")}> 
                         Download a detailed version of the schedule here
-                    </Typography>
+                    </Typography> */}
                     <Divider sx={{marginY: "8px"}} />
                     <Typography>
-                        Date of competition: Sunday, April 6th
+                        Date of competition: Saturday, May 30th, 2026
                     </Typography>
-                    <br /> */}
+                    <br />
                     {/** Table container for styling with TableHead for column names 
                      * and events happening throughout the day as TableRows  */}
-                    {/* <TableContainer component={Paper}>
+                    <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 300 }} aria-label="Schedule Table">
                             <TableHead>
                                 <TableRow>
-                                    <TableCell>Name</TableCell>
+                                    <TableCell>Event</TableCell>
                                     <TableCell align="right">Time</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
                                 <TableRow>
-                                    <TableCell>Registration</TableCell>
-                                    <TableCell align="right">10:30am - 11am</TableCell>
+                                    <TableCell>Check-in Opens</TableCell>
+                                    <TableCell align="right">1:00pm</TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>Gummy Guessing Game</TableCell>
-                                    <TableCell align="right">10:45am - 11am</TableCell>
+                                    <TableCell>Check-in</TableCell>
+                                    <TableCell align="right">1:00pm - 1:45pm</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>Jelly Bean Guessing Game</TableCell>
+                                    <TableCell align="right">1:00pm - 1:45pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Opening Ceremony</TableCell>
-                                    <TableCell align="right">11:00am - 11:30am</TableCell>
+                                    <TableCell align="right">1:45pm- 2:00pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Super Sprint</TableCell>
-                                    <TableCell align="right">11:30am - 12:10pm</TableCell>
+                                    <TableCell align="right">2:05pm - 2:40pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Mental Mania</TableCell>
-                                    <TableCell align="right">12:10pm - 12:30pm</TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>Lunch</TableCell>
-                                    <TableCell align="right">12:30pm - 1:30pm</TableCell>
+                                    <TableCell align="right">2:40pm - 3:00pm</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell>Team Tumble</TableCell>
-                                    <TableCell align="right">1:30pm - 2:00pm</TableCell>
+                                    <TableCell align="right">3:00pm - 3:30pm</TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>Lynx Lightning Round</TableCell>
-                                    <TableCell align="right">2:00pm - 3:30pm</TableCell>
+                                    <TableCell>Snack Time and Math Bingo</TableCell>
+                                    <TableCell align="right">3:30pm- 4:00pm</TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>Closing Ceremony</TableCell>
-                                    <TableCell align="right">3:30pm - 4:00pm</TableCell>
+                                    <TableCell>Awards Ceremony</TableCell>
+                                    <TableCell align="right">4:00pm - 4:30pm</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
-                    </TableContainer> */}
+                    </TableContainer>
                     {/** Resizable image grid of competition sponsor logos */}
                     <div id="sponsors" className="max-w-3xl w-full">
                         <br /><br />
