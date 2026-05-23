@@ -89,9 +89,9 @@ export default function Info() {
                     </Typography>
                     <Divider sx={{marginY: "8px"}} />
                     <Typography>
-                        These costs are coming out of club funds. For that reason, we ask that you consider donating to our club! It will help us keep doing events like these annually.
+                        All competition expenses, such as facility fees, snacks for participants, prizes/awards, and other expenses come from our club budget. For that reason, we ask that you please consider donating to our club. Your support helps us keep our annual math competition free for all participants.
                         <br /><br />
-                        We suggest a donation of $5 if your child is attending the competition. You can donate at the event or the SchoolPay link below:
+                        You can make a donation at the event or with the SchoolPay link below:
                     </Typography>
                     <Button href="https://www.schoolpay.com/pay/for/Math-Club-Donations/SdmwPMB"
                         target="_blank"
