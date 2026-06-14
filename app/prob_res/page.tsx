@@ -272,8 +272,8 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ loc }) => {
 
 
 export default function ProbRes() {
-    // Competition year, by default set to 2025
-    const [year, setYear] = useState<string>('2025');
+    // Competition year, by default set to 2026
+    const [year, setYear] = useState<string>('2026');
 
     // List of competition problem sets for given year
     let pdfLocList = [`/comp_psets/${year}/Mental_Mania_Masters.pdf`, 
@@ -304,6 +304,7 @@ export default function ProbRes() {
                             {/** Competition year options */}
                             <MenuItem value="2024">2024</MenuItem>
                             <MenuItem value="2025">2025</MenuItem>
+                            <MenuItem value="2026">2026</MenuItem>
                         </Select>
                     </FormControl>
                 </Box>
