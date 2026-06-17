@@ -88,6 +88,7 @@ interface TeamProps {
     teamOut: TeamData[];
     isMM: boolean;
     totalOnly: boolean;
+    showLightning?: boolean;
 }
 
 /**
@@ -100,31 +101,23 @@ interface IndividualProps {
 }
 
 // Table functional component with team results using TeamProps parameters
-const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM, totalOnly }) => {
-    const roundType = isMM ? 'Math Masters' :'Numerical Novices';
+const TeamTable: React.FC<TeamProps> = ({ teamOut, isMM }) => {
+    const roundType = isMM ? 'Math Masters' : 'Numerical Novices';
     return (
         <List>
             <TableContainer component={Paper}>
                 <Typography>Results for {roundType} Round </Typography>
-                {/** Column names are Names, Team Tumble, Lynx Lightning, Total Score */}
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
                             <TableCell>Names</TableCell>
-                            {/** Only add individual round columns if want individual round score breakdowns */}
-                            {!totalOnly && <TableCell align="right">Team Tumble</TableCell>}
-                            {!totalOnly &&  <TableCell align="right">Lynx Lightning</TableCell>}
                             <TableCell align="right">Total Score</TableCell>
                         </TableRow>
                     </TableHead>
-                    {/** Iterates through teamOut team data and adds the data of each team as a new TableRow
-                     * If totalOnly, only dispalys the total score TableCell*/}
                     <TableBody>
                         {teamOut.map((row, index) => (
                             <TableRow key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                 <TableCell component="th" scope="row">{row.names}</TableCell>
-                                 {!totalOnly && <TableCell align="right">{row.tumbleScore}</TableCell>}
-                                 {!totalOnly && <TableCell align="right">{row.lightningScore}</TableCell>}
                                 <TableCell align="right">{row.total}</TableCell>
                             </TableRow>
                         ))}
@@ -213,7 +206,7 @@ const CompContent: React.FC<CompYear> = ({ selectedTest, isMM }) => {
 
     // Return either a TeamTable or IndividualTable component depending on test type
     if (selectedTest.includes('team')) {
-        return  <TeamTable teamOut={teamData} isMM={isMM} totalOnly={Number(year) == 2025 ? true : false}/>;
+        return  <TeamTable teamOut={teamData} isMM={isMM} totalOnly={false} showLightning={year === '2024'} />;
     } else if (selectedTest.includes('individual')) {
         return <IndividualTable individualOut={individualData} isMM={isMM}/>;
     } else { 
@@ -242,10 +235,13 @@ const Dropdown: React.FC = () => {
                     label="Competition Results"
                     onChange={handleChange}
                 >
-                    <MenuItem value="team2024">2024 Team</MenuItem>
-                    <MenuItem value="individual2024">2024 Individual</MenuItem>
+                    <MenuItem value="team2026">2026 Team</MenuItem>
+                    <MenuItem value="individual2026">2026 Individual</MenuItem>
                     <MenuItem value="team2025">2025 Team</MenuItem>
                     <MenuItem value="individual2025">2025 Individual</MenuItem>
+                    <MenuItem value="team2024">2024 Team</MenuItem>
+                    <MenuItem value="individual2024">2024 Individual</MenuItem>
+                    
                 </Select>
             </FormControl>
             <Box mt={2}>
