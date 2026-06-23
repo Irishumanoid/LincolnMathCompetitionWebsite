@@ -51,6 +51,18 @@ function createTeamData(
     return { names, tumbleScore, lightningScore, total };
 }
 
+/** @returns list of team members as a formatted string */
+function formatTeamMembers(item: Record<string, any>): string {
+    return [
+        item['Team Member 1'],
+        item['Team Member 2'],
+        item['Team Member 3'],
+        item['Team Member 4']
+    ]
+        .filter(name => typeof name === 'string' && name.trim() !== '')
+        .join(', ');
+}
+
 /** @returns individual info as IndividualData object */
 function createIndividualData(
     name: string,
@@ -182,7 +194,7 @@ const CompContent: React.FC<CompYear> = ({ selectedTest, isMM }) => {
         if (selectedTest.includes('team')) {
             loadCSV(resDir).then(data => {
                 const teamResults = data.slice(0, -1).map(item => createTeamData(
-                    `${item['Team Member 1']}, ${item['Team Member 2']}, ${item['Team Member 3']}`,
+                    formatTeamMembers(item),
                     Number(item['Team Tumble']),
                     Number(item['Lynx Lightning']),
                     Number(item['Total'])
